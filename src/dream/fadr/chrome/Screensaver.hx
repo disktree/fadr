@@ -16,11 +16,12 @@ class Screensaver {
             Storage.local.get( {
                     idleTimeout: 15,
                     brightness: 100,
+                    saturation: 100,
                     fadeDuration: 1000,
                     changeInterval: 1000
                 },
                 function(data){
-                    view = new FadrView( data.brightness, data.fadeDuration, data.changeInterval );
+                    view = new FadrView( data.brightness, data.saturation, data.fadeDuration, data.changeInterval );
                     view.start();
                 }
             );

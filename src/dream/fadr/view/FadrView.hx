@@ -21,9 +21,10 @@ class FadrView {
     public var currentColor(default,null) : String;
 
     var dom : Element;
-    var animation : Dynamic;
     var timer : Timer;
     var isFading : Bool;
+    var nextColor : String;
+    var colors : Array<String>;
 
     public function new( brightness = 100, saturation = 100, fadeDuration = 1000, changeInterval = 1000 ) {
 
@@ -32,13 +33,16 @@ class FadrView {
         this.fadeDuration = fadeDuration;
         this.changeInterval = changeInterval;
 
-        dom = document.getElementById( 'fadr' );
-
-        applyFilters();
-
         isFading = false;
         currentColor = '#000';
         palette = getRandomColorPalette();
+        colors = palette.colors.copy();
+
+        dom = document.getElementById( 'fadr' );
+        //dom.style.transitionProperty = ' background-color';
+        applyFilters();
+        applyFadeDuration();
+        dom.addEventListener( 'transitionend', handleTransitionEnd );
     }
 
     public function start() {
@@ -47,7 +51,6 @@ class FadrView {
 
     public function stop() {
         if( timer != null ) timer.stop();
-        if( animation != null ) animation.cancel();
     }
 
     public function setBrightness( value : Int ) {
@@ -61,27 +64,18 @@ class FadrView {
     }
 
     public function setFadeDuration( value : Int ) {
-
         this.fadeDuration = value;
-
-        if( isFading ) {
-            animation.cancel();
-        } else {
-            timer.stop();
-        }
+        applyFadeDuration();
         startFade();
     }
 
     public function setChangeInterval( value : Int ) {
-
         this.changeInterval = value;
-
-        if( isFading ) {
-            animation.cancel();
-        } else {
-            timer.stop();
-        }
         startFade();
+    }
+
+    function applyFadeDuration() {
+        dom.style.transitionDuration = ((fadeDuration == 0 ) ? 1 : fadeDuration)+'ms';
     }
 
     function applyFilters() {
@@ -89,37 +83,41 @@ class FadrView {
     }
 
     function startFade() {
-
-        isFading = true;
-
-        var nextColor = getRandomColor();
-        animation = untyped dom.animate( [
-                { backgroundColor:currentColor },
-                { backgroundColor:nextColor }
-            ],
-            { duration:fadeDuration, fill:'both' }
-        );
-        animation.onfinish = function(e){
-            dom.style.backgroundColor = currentColor = nextColor;
-            e.target.cancel();
-            handleFadeComplete();
+        if( timer != null ) {
+            timer.stop();
+            timer = null;
         }
+        isFading = true;
+        nextColor = getRandomColor();
+        dom.style.backgroundColor = nextColor;
     }
 
-    function handleFadeComplete() {
-        animation = null;
+    function handleTransitionEnd(e) {
         isFading = false;
+        currentColor = nextColor;
         timer = new Timer( changeInterval );
         timer.run = handleTimeout;
     }
 
     function handleTimeout() {
-        timer.stop();
         startFade();
     }
 
     function getRandomColor() : String {
-        return palette.colors[Std.int(Math.random()*palette.colors.length)];
+        var color : String = null;
+        var i : Int = null;
+        while( true ) {
+            i = Std.int( Math.random() * colors.length );
+            color = colors[i];
+            if( color != currentColor )
+                break;
+        }
+        colors.splice( i, 1 );
+        if( colors.length == 0 ) {
+            palette = getRandomColorPalette();
+            colors = palette.colors.copy();
+        }
+        return color;
     }
 
 }

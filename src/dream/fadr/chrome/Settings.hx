@@ -5,9 +5,9 @@ import js.Browser.window;
 import chrome.Storage;
 import dream.fadr.view.FadrView;
 
-class Options {
+class Settings {
 
-    static var options : OptionsView;
+    static var settings : SettingsView;
     static var view : FadrView;
 
     static function main() {
@@ -25,13 +25,13 @@ class Options {
                     fadeDuration: 1000,
                     changeInterval: 1000
                 },
-                function(settings){
+                function(data){
 
-                    view = new FadrView( settings.brightness, settings.saturation, settings.fadeDuration, settings.changeInterval );
+                    view = new FadrView( data.brightness, data.saturation, data.fadeDuration, data.changeInterval );
                     view.start();
 
-                    options = new OptionsView( settings );
-                    options.onChange = function(type,value) {
+                    settings = new SettingsView( data );
+                    settings.onChange = function(type,value) {
 
                         switch type {
                         case 'brightness': view.setBrightness( value );

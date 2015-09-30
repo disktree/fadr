@@ -10,7 +10,7 @@
         "scripts": ["background.js"]
     },
     "options_ui": {
-        "page": "options.html",
+        "page": "settings.html",
         "chrome_style": false,
         "open_in_tab": true
     },

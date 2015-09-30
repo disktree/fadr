@@ -1,8 +1,6 @@
-package dream.fadr.chrome;
+package dream.fadr;
 
-typedef OptionsData = {
-
-    var idleTimeout : Int;
+typedef FadrSettingsData = {
 
     var brightness : Int;
     var saturation : Int;

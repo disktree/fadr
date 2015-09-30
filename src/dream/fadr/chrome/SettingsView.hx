@@ -4,13 +4,13 @@ import js.Browser.document;
 import js.html.Element;
 import dream.fadr.view.Slider;
 
-class OptionsView {
+class SettingsView {
 
     public dynamic function onChange( type : String, value : Int ) {}
 
     var dom : Element;
 
-    public function new( settings : OptionsData ) {
+    public function new( settings : SettingsData ) {
 
         dom = document.getElementById( 'options' );
 

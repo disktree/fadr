@@ -12,7 +12,6 @@ class Build {
 
         syncFile( 'res/chrome/manifest.json', 'build/chrome/manifest.json' );
         syncFile( 'res/chrome/screensaver.html', 'build/chrome/screensaver.html' );
-        syncFile( 'res/chrome/options.html', 'build/chrome/options.html' );
-        //syncFile( 'res/chrome/screensaver.css', 'build/chrome/screensaver.css' );
+        syncFile( 'res/chrome/settings.html', 'build/chrome/settings.html' );
     }
 }

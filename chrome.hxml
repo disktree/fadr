@@ -1,6 +1,6 @@
 -cmd haxe chrome-background.hxml
 -cmd haxe chrome-screensaver.hxml
--cmd haxe chrome-options.hxml
+-cmd haxe chrome-settings.hxml
 
 --next
 -cp src

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FadrSettings</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+        <link rel="stylesheet" href="options.css">
+        <script src="options.js" defer></script>
+    </head>
+    <body>
+
+        <div id="fadr"></div>
+
+        <div id="options">
+
+            <!--
+            <section id="color-palette"></section>
+            -->
+
+            <section title="Idle timeout in seconds">
+                <div class="title">IDLE TIMEOUT</div>
+                <div id="idle-timeout-label" class="label"></div>
+                <input type="range" id="idle-timeout" class="slider" min="15" max="600" step="1" tabindex="0"/>
+            </section>
+
+            <section title="Screensaver brightness">
+                <div class="title">BRIGHTNESS</div>
+                <div id="brightness-label" class="label"></div>
+                <input type="range" id="brightness" class="slider" min="5" max="200" step="1" tabindex="0"/>
+            </section>
+
+            <section title="Color saturation">
+                <div class="title">SATURATION</div>
+                <div id="saturation-label" class="label"></div>
+                <input type="range" id="saturation" class="slider" min="0" max="200" step="1" tabindex="0"/>
+            </section>
+
+            <section title="Duration of a fade from color to color in milli-seconds">
+                <div class="title">FADE DURATION</div>
+                <div id="fade-duration-label" class="label"></div>
+                <input type="range" id="fade-duration" class="slider" min="0" max="5000" step="16" tabindex="0"/>
+            </section>
+
+            <section title="Pause between fades in milli-seconds">
+                <div class="title">COLOR CHANGE DELAY</div>
+                <div id="change-interval-label" class="label"></div>
+                <input type="range" id="change-interval" class="slider" min="16" max="5000" step="16" tabindex="0"/>
+            </section>
+
+        </div>
+
+    </body>
+</html>

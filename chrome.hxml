@@ -1,0 +1,8 @@
+-cmd haxe chrome-background.hxml
+-cmd haxe chrome-screensaver.hxml
+-cmd haxe chrome-options.hxml
+
+--next
+-cp src
+-cp ../../lib/om/src
+--macro dream.fadr.chrome.Build.app()

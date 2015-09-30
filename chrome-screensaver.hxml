@@ -1,0 +1,11 @@
+-js build/chrome/screensaver.js
+-main dream.fadr.chrome.Screensaver
+-cp src
+-cp ../../../../lib/om/src
+-lib chrome-extension
+-dce full
+-D analyzer
+#-debug
+--no-traces
+
+-cmd lessc res/chrome/screensaver.less build/chrome/screensaver.css

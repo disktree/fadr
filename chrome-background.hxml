@@ -1,0 +1,9 @@
+-js build/chrome/background.js
+-main dream.fadr.chrome.Background
+-cp src
+-cp ../../../../lib/om/src
+-lib chrome-extension
+-dce full
+-D analyzer
+#-debug
+--no-traces

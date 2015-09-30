@@ -1,0 +1,100 @@
+
+@import "../style/base.less";
+@import "../style/fadr.less";
+
+@c-bg: #fff;
+@c-fg: #000;
+@width: 400px;
+
+@font-face {
+  src: url('font/Roboto-Light.ttf') format('truetype');
+  font-family: RobotoLight;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: RobotoLight;
+    font-size: 14px;
+    background: #000;
+}
+
+input[type=range] {
+   -webkit-appearance: none;
+   -webkit-user-select: none;
+   width: 100%;
+   align-self: center;
+   cursor: pointer;
+
+   background: transparent;
+}
+input[type=range]:focus {
+	outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+    width: 400px;
+    height: 10px;
+    border-top:1px solid #000;
+    color: rgba(0,0,0,0.0);
+    background: rgba(0,0,0,0.0);
+}
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: -7px;
+    border-radius: 7px;
+    background: #000;
+}
+
+#options {
+
+    position: fixed;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    width: @width;
+    max-width: @width;
+    margin: 0% auto;
+
+    z-index: 100;
+
+    -webkit-user-select: none;
+}
+#options section {
+
+    margin: 0px 10px 10px 10px;
+    padding: 18px 30px 18px 30px;
+
+    //background: rgba(255,255,255,0.5);
+    //background: rgba(0,0,0,0.7);
+    //color: #fff;
+    //background: rgba(255,255,255,0.9);
+    color: #000;
+    //mix-blend-mode: difference;
+
+    //background-blend-mode: screen;
+
+    //-webkit-text-stroke: 2px #fff;
+
+    /*
+    text-shadow:
+   -1px -1px 0 rgba(255,255,255,0.05),
+    1px -1px 0 rgba(255,255,255,0.05),
+    -1px 1px 0 rgba(255,255,255,0.05),
+     1px 1px 0 rgba(255,255,255,0.05);
+     */
+    //-webkit-mix-blend-mode: color-burn;
+    //mix-blend-mode: color-burn;
+
+
+    border-radius: 2px;
+}
+#options section .label {
+    text-transform: uppercase;
+}

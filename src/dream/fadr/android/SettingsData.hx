@@ -1,5 +1,4 @@
-package dream.fadr.chrome;
+package dream.fadr.android;
 
 typedef SettingsData = { > dream.fadr.FadrSettings,
-    var idleTimeout : Int;
 }

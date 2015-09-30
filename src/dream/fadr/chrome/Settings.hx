@@ -25,9 +25,9 @@ class Settings {
                     fadeDuration: 1000,
                     changeInterval: 1000
                 },
-                function(data){
+                function(data:SettingsData){
 
-                    view = new FadrView( data.brightness, data.saturation, data.fadeDuration, data.changeInterval );
+                    view = new FadrView( data );
                     view.start();
 
                     settings = new SettingsView( data );

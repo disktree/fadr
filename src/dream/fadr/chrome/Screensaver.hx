@@ -21,7 +21,7 @@ class Screensaver {
                     changeInterval: 1000
                 },
                 function(data){
-                    view = new FadrView( data.brightness, data.saturation, data.fadeDuration, data.changeInterval );
+                    view = new FadrView( data );
                     view.start();
                 }
             );

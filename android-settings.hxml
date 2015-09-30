@@ -1,0 +1,10 @@
+-js build/android/settings.js
+-main dream.fadr.android.Settings
+-cp src
+-cp ../../../../lib/om/src
+-dce full
+-D android
+-D analyzer
+-debug
+
+-cmd lessc res/android/settings.less build/android/settings.css

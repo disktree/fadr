@@ -1,6 +1,6 @@
 package dream.fadr;
 
-typedef FadrSettingsData = {
+typedef FadrSettings = {
 
     var brightness : Int;
     var saturation : Int;

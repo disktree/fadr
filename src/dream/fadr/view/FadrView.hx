@@ -3,6 +3,7 @@ package dream.fadr.view;
 import js.Browser.document;
 import js.html.Element;
 import haxe.Timer;
+import dream.fadr.FadrSettings;
 
 @:build(dream.fadr.macro.BuildFadrView.build())
 class FadrView {
@@ -26,12 +27,13 @@ class FadrView {
     var nextColor : String;
     var colors : Array<String>;
 
-    public function new( brightness = 100, saturation = 100, fadeDuration = 1000, changeInterval = 1000 ) {
+    //public function new( brightness = 100, saturation = 100, fadeDuration = 1000, changeInterval = 1000 ) {
+    public function new( settings : FadrSettings ) {
 
-        this.brightness = brightness;
-        this.saturation = saturation;
-        this.fadeDuration = fadeDuration;
-        this.changeInterval = changeInterval;
+        this.brightness = settings.brightness;
+        this.saturation = settings.saturation;
+        this.fadeDuration = settings.fadeDuration;
+        this.changeInterval = settings.changeInterval;
 
         isFading = false;
         currentColor = '#000';
@@ -79,7 +81,10 @@ class FadrView {
     }
 
     function applyFilters() {
+        #if android
+        #else
         untyped dom.style.webkitFilter = 'brightness('+(brightness/100)+') saturate('+saturation+'%)';
+        #end
     }
 
     function startFade() {

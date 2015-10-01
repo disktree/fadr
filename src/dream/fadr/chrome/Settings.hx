@@ -20,6 +20,7 @@ class Settings {
 
             Storage.local.get( {
                     idleTimeout: 15,
+                    power: chrome.Power.Level.display,
                     brightness: 100,
                     saturation: 100,
                     fadeDuration: 1000,
@@ -32,6 +33,8 @@ class Settings {
 
                     settings = new SettingsView( data );
                     settings.onChange = function(type,value) {
+
+                        //settings.idleTimeoutInput.onChange = function(){
 
                         switch type {
                         case 'brightness': view.setBrightness( value );

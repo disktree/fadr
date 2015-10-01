@@ -2,6 +2,7 @@ package dream.fadr.chrome;
 
 import js.Browser.document;
 import js.html.Element;
+import js.html.SelectElement;
 import dream.fadr.view.Slider;
 
 class SettingsView {
@@ -18,6 +19,13 @@ class SettingsView {
         idleTimeoutInput.onChange = function(v) {
             onChange( 'idleTimeout', v );
         }
+
+        /*
+        var selectPowerInput : SelectElement = cast document.getElementById( 'power' );
+        selectPowerInput.onchange = function(e) {
+            trace(e.target.value);
+        }
+        */
 
         var brightnessInput = new Slider( 'brightness', settings.brightness, '%' );
         brightnessInput.onChange = function(v) {

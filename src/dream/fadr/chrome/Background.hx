@@ -31,9 +31,24 @@ class Background {
 
     static function main() {
 
-        Storage.local.get( null,
+        Storage.local.get( {
+                idleTimeout: 15,
+                power: chrome.Power.Level.display,
+                brightness: 100,
+                saturation: 100,
+                fadeDuration: 1000,
+                changeInterval: 1000
+            },
 
             function(settings){
+
+                //trace(settings);
+
+                if( settings.power != null ) {
+                    Power.requestKeepAwake( settings.power );
+                } else {
+                    Power.releaseKeepAwake();
+                }
 
                 Idle.setDetectionInterval( settings.idleTimeout );
 
@@ -54,8 +69,8 @@ class Background {
                     }
                 });
 
-                //Power.requestKeepAwake( display );
-                Power.requestKeepAwake( system );
+                //Power.requestKeepAwake( system );
+                Power.requestKeepAwake( display );
             }
         );
     }

@@ -27,7 +27,6 @@ class FadrView {
     var nextColor : String;
     var colors : Array<String>;
 
-    //public function new( brightness = 100, saturation = 100, fadeDuration = 1000, changeInterval = 1000 ) {
     public function new( settings : FadrSettings ) {
 
         this.brightness = settings.brightness;
@@ -72,19 +71,27 @@ class FadrView {
     }
 
     public function setChangeInterval( value : Int ) {
+        if( value <= 0 ) value = 1;
         this.changeInterval = value;
         startFade();
     }
+
 
     function applyFadeDuration() {
         dom.style.transitionDuration = ((fadeDuration == 0 ) ? 1 : fadeDuration)+'ms';
     }
 
     function applyFilters() {
-        #if android
-        #else
-        untyped dom.style.webkitFilter = 'brightness('+(brightness/100)+') saturate('+saturation+'%)';
-        #end
+        //#if android
+        //untyped dom.style.filter = 'saturate('+saturation+'%)';
+        //untyped dom.style.webkitFilter = 'saturate('+saturation+'%)';
+        //#else
+        var str = 'brightness('+brightness+'%) saturate('+saturation+'%)';
+        dom.style.filter = str;
+        untyped dom.style.webkitFilter = str;
+        //trace(str);
+        //trace(untyped dom.style.webkitFilter);
+        //#end
     }
 
     function startFade() {

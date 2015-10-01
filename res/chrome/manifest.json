@@ -1,7 +1,8 @@
 {
     "name": "Fadr",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "Color fading screensaver",
+    "short_name": "Fadr",
     "manifest_version": 2,
     "minimum_chrome_version": "44",
     "offline_enabled": true,
@@ -14,7 +15,7 @@
         "chrome_style": false,
         "open_in_tab": true
     },
-    "permissions": ["tabs","idle","storage","power"],
+    "permissions": ["windows","idle","storage","power"],
     "icons": {
         "16": "icon/chrome-16.png",
         "48": "icon/chrome-48.png",

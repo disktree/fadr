@@ -6,6 +6,7 @@ import haxe.macro.Expr;
 import sys.FileSystem;
 import sys.io.File;
 
+using Lambda;
 using haxe.io.Path;
 
 class BuildFadrView {
@@ -28,7 +29,7 @@ class BuildFadrView {
                     trace('Invalid: '+color );
                 }
                 */
-                palette.colors.push( color );
+                if( !palette.colors.has( color ) ) palette.colors.push( color );
             }
             COLORS.push( palette );
         }

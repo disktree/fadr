@@ -5,9 +5,16 @@ import js.html.Element;
 import js.html.SelectElement;
 import dream.fadr.view.Slider;
 
-class SettingsView {
+class SettingsMenu {
 
     public dynamic function onChange( type : String, value : Int ) {}
+
+    /*
+    public var brightnessInput(default,null) : Slider;
+    public var saturateInput(default,null) : Slider;
+    public var fadeDurationInput(default,null) : Slider;
+    public var changeIntervalInput(default,null) : Slider;
+    */
 
     var dom : Element;
 

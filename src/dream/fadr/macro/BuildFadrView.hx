@@ -24,12 +24,12 @@ class BuildFadrView {
             for( color in colors ) {
                 if( color.length == 0 )
                     continue;
-                /*
                 if( !colorExpr.match( color ) ) {
-                    trace('Invalid: '+color );
+                    Context.warning( 'Invalid color value: '+color+' [$f]', Context.currentPos() );
+                    continue;
                 }
-                */
-                if( !palette.colors.has( color ) ) palette.colors.push( color );
+                if( !palette.colors.has( color ) )
+                    palette.colors.push( color );
             }
             COLORS.push( palette );
         }

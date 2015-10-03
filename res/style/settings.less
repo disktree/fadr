@@ -17,6 +17,11 @@ body {
     overflow-x: hidden;
 }
 
+input {
+    //-webkit-appearance: none;
+    -webkit-user-select: none;
+    //-webkit-tap-highlight-color: none;
+}
 
 input[type=range] {
    -webkit-appearance: none;
@@ -58,26 +63,62 @@ input[type=range]::-webkit-slider-thumb:hover {
     transform: scale(1.3,1.3);
 }
 
+
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    display: inline-block;
+    //float: left;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 0 6px;
+    padding: 0;
+    position: relative;
+    top: 0px;
+    background: #000;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+input[type="checkbox"]:focus{
+    outline:0;
+}
+input[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+input[type="checkbox"] + label {
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align:middle;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+    //background: #fff;
+}
+
+
 /*
 select {
     -webkit-appearance: none;
-    background: transparent;
-    width: 80px;
-    border: none;
+    display: table;
+    /*
+    background: #fff;
+    //width: 80px;
     font-family: RobotoLight;
     font-size: 14px;
-    outline: none;
-}
-select:focus {
     border: none;
     outline: none;
 }
 select option {
-    font-weight: normal;
-    appearance: none;
+    display: table;
     -webkit-appearance: none;
-    background: transparent;
-    width: 80px;
+    //padding: 5px;
+    font-weight: normal;
+    background: #fff;
 }
 */
 
@@ -85,10 +126,10 @@ select option {
 #settings {
 
     position: fixed;
-    top: 20px;
-    right: 20px;
-    bottom: 20;
-    left: 30px;
+    top: 44px;
+    right: 0px;
+    bottom: 0px;
+    left: 64px;
 
     //text-align: center;
     max-width: @max-width;
@@ -101,6 +142,11 @@ select option {
 
     color: #fff;
     mix-blend-mode: difference;
+}
+
+#settings h1 {
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
 #settings div.ruler {
@@ -117,11 +163,27 @@ select option {
 }
 #settings section .title {
     float: left;
-    margin-left: 2px;
+    margin-left: 1px;
     margin-right: 5px;
     //display: inline-block;
 }
 #settings section .label {
     //display: inline-block;
     text-transform: uppercase;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 10px;
+    bottom: 1px;
+    mix-blend-mode: difference;
+}
+footer img {
+    transition: transform 0.15s;
+    transform: scale(0.5,0.5);
+}
+footer img:hover {
+    transform: scale(0.75,0.75);
 }

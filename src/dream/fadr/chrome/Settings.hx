@@ -7,7 +7,7 @@ import dream.fadr.view.FadrView;
 
 class Settings {
 
-    static var settings : SettingsView;
+    static var settings : SettingsMenu;
     static var view : FadrView;
 
     static function main() {
@@ -31,10 +31,12 @@ class Settings {
                     view = new FadrView( data );
                     view.start();
 
-                    settings = new SettingsView( data );
+                    settings = new SettingsMenu( data );
                     settings.onChange = function(type,value) {
 
-                        //settings.idleTimeoutInput.onChange = function(){
+                        var data = {};
+                        Reflect.setField( data, type, value );
+                        Storage.local.set( data );
 
                         switch type {
                         case 'brightness': view.setBrightness( value );
@@ -42,10 +44,6 @@ class Settings {
                         case 'fadeDuration': view.setFadeDuration( value );
                         case 'changeInterval': view.setChangeInterval( value );
                         }
-
-                        var data = {};
-                        Reflect.setField( data, type, value );
-                        Storage.local.set( data );
                     }
                 }
             );

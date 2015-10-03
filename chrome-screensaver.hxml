@@ -6,6 +6,6 @@
 -dce full
 -D analyzer
 #-debug
---no-traces
+#--no-traces
 
 -cmd lessc res/chrome/screensaver.less build/chrome/screensaver.css

@@ -13,24 +13,13 @@
         <div id="settings">
 
             <!--
-            <section id="color-palette"></section>
+            <h1>Fadr Settings</h1>
             -->
 
-            <section title="Idle timeout in seconds">
-                <div class="title">IDLE TIMEOUT</div>
-                <div id="idle-timeout-label" class="label"></div>
-                <input type="range" id="idle-timeout" class="slider" min="15" max="600" step="1" tabindex="0"/>
-            </section>
+            <img id="title" src="image/fadr-title.png"/>
 
             <!--
-            <section>
-                <div class="title">KEEP AWAKE</div>
-                <select id="power">
-                    <option value="none">NONE</option>
-                    <option value="display">DISPLAY</option>
-                    <option value="system">SYSTEM</option>
-                </select>
-            </section>
+            <section id="color-palette"></section>
             -->
 
             <!--
@@ -46,7 +35,7 @@
             <section title="Color saturation">
                 <div class="title">SATURATION</div>
                 <div id="saturation-label" class="label"></div>
-                <input type="range" id="saturation" class="slider" min="0" max=200" step="1" tabindex="0"/>
+                <input type="range" id="saturation" class="slider" min="0" max="200" step="1" tabindex="0"/>
             </section>
 
             <section title="Duration of a fade from color to color in milli-seconds">
@@ -61,7 +50,36 @@
                 <input type="range" id="change-interval" class="slider" min="0" max="5000" step="10" tabindex="0"/>
             </section>
 
+
+                        <section title="Idle timeout in seconds">
+                            <div class="title">IDLE TIMEOUT</div>
+                            <div id="idle-timeout-label" class="label"></div>
+                            <input type="range" id="idle-timeout" class="slider" min="15" max="600" step="1" tabindex="0"/>
+                        </section>
+
+                        <section>
+                            <div class="title">KEEP AWAKE</div>
+                            <input type="checkbox" id="power-display">
+                            <label for="power-display">DISPLAY</label>
+                            <input type="checkbox" id="power-system">
+                            <label for="power-system">SYSTEM<label>
+                            <!--
+                            <select id="power">
+                                <option value="none">NONE</option>
+                                <option value="display">DISPLAY</option>
+                                <option value="system">SYSTEM</option>
+                            </select>
+                            -->
+                        </section>
+
+
         </div>
+
+        <!--
+        <footer>
+            <a href="https://play.google.com/store/apps/details?id=disktree.net.dream.fadr" title="Get fadr for android" target="_blank"><img src="image/android.png"/></a>
+        </footer>
+        -->
 
     </body>
 </html>

@@ -2,8 +2,8 @@
 -main dream.fadr.chrome.Background
 -cp src
 -cp ../../../../lib/om/src
--lib chrome-extension
+-lib chrome-app
 -dce full
 -D analyzer
 #-debug
---no-traces
+#--no-traces

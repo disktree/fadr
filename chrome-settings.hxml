@@ -6,6 +6,6 @@
 -dce full
 -D analyzer
 #-debug
---no-traces
+#--no-traces
 
 -cmd lessc res/chrome/settings.less build/chrome/settings.css

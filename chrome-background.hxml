@@ -5,5 +5,5 @@
 -lib chrome-app
 -dce full
 -D analyzer
-#-debug
+-debug
 #--no-traces

@@ -6,6 +6,7 @@ import js.html.InputElement;
 
 class Slider {
 
+    public dynamic function onInput( value : Int ) {}
     public dynamic function onChange( value : Int ) {}
 
     var postText : String;
@@ -47,6 +48,7 @@ class Slider {
 
     function handleInput(e) {
         updateLabelValue();
+        onInput( Std.parseInt( untyped e.target.value ) );
     }
 
     function handleInputChange(e) {

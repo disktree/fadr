@@ -2,6 +2,51 @@
 @import "../style/base.less";
 @import "../style/fadr.less";
 
-#fadr {
+body {
     cursor: none;
+}
+
+#fadr {
+    //cursor: none;
+}
+
+@max-width: 340px;
+@slider-thumb-size : 14px;
+
+@import "../style/settings.less";
+
+#settings {
+    top: 48px;
+    left: 72px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+#settings #title {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+#settings .column {
+    //display: inline-block;
+}
+
+#settings #power span {
+    margin-right: 2px;
+}
+#settings #power span.power-setting {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+#settings-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    max-width: 24px;
+    max-height: 24px;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.1s;
 }

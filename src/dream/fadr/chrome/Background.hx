@@ -2,36 +2,78 @@ package dream.fadr.chrome;
 
 import chrome.Idle;
 import chrome.Power;
-import chrome.Runtime;
 import chrome.Storage;
-import chrome.Windows;
+import chrome.app.Runtime;
+import chrome.app.Window;
+import chrome.system.Display;
 
 class Background {
 
-    static var window : Window;
+    static var windows : Array<AppWindow>;
 
     static function startScreensaver() {
-        if( window == null ) {
-            Windows.create( {
-                url: "screensaver.html",
-                state: fullscreen,
-                focused: true
-            }, function(?win){
-                window = win;
-            });
-        }
+        windows = [];
+        Display.getInfo(function(displayInfo){
+            for( display in displayInfo ) {
+                Window.create( 'screensaver.html',
+                    {
+                        alwaysOnTop: true,
+                        visibleOnAllWorkspaces: true,
+                        state: fullscreen,
+                        bounds: display.bounds
+                    },
+                    function(win){
+                        windows.push( win );
+                        win.contentWindow.addEventListener( 'resize', function(e){
+                            stopScreensaver();
+                        });
+                    }
+                );
+            }
+        });
     }
 
     static function stopScreensaver() {
-        if( window != null ) {
-            Windows.remove( window.id, function(){
-                window = null;
-            });
+        if( windows != null ) {
+            for( win in windows ) win.close();
+            windows = null;
         }
     }
 
     static function main() {
 
+        Storage.local.get( {
+                idleTimeout: 15,
+                power: chrome.Power.Level.display,
+                brightness: 100,
+                saturation: 100,
+                fadeDuration: 1000,
+                changeInterval: 1000
+            },
+            function(data){
+                Idle.setDetectionInterval( data.idleTimeout );
+                Idle.onStateChanged.addListener(function(state){
+                    switch state {
+                    case active:
+                        //stopScreensaver();
+                    case locked:
+                        stopScreensaver();
+                    case idle:
+                        startScreensaver();
+                    }
+                });
+            }
+        );
+
+        Window.onBoundsChanged.addListener(function(){
+            stopScreensaver();
+        });
+
+        Runtime.onLaunched.addListener( function(_) {
+            startScreensaver();
+        });
+
+        /*
         Storage.local.get( {
                 idleTimeout: 15,
                 power: chrome.Power.Level.display,
@@ -48,16 +90,9 @@ class Background {
                 if( settings.power != null ) {
                     Power.requestKeepAwake( settings.power );
                 } else {
-                    //Power.releaseKeepAwake();
+                    Power.releaseKeepAwake();
                 }
 
-                Idle.onStateChanged.addListener(function(state){
-                    trace(state);
-                    switch state {
-                    case active,locked: stopScreensaver();
-                    case idle: startScreensaver();
-                    }
-                });
                 Idle.setDetectionInterval( settings.idleTimeout );
 
                 Storage.onChanged.addListener(function(changes,namespace){
@@ -65,11 +100,22 @@ class Background {
                         Idle.setDetectionInterval( changes.idleTimeout.newValue );
                     }
                 });
+
+                Idle.onStateChanged.addListener(function(state){
+                    switch state {
+                    case active:
+                        stopScreensaver();
+                    case idle:
+                        startScreensaver();
+                    case locked:
+                        //TODO ? show
+                    }
+                });
+
+                //Power.requestKeepAwake( display );
+                //Power.requestKeepAwake( system );
             }
         );
-
-        Runtime.onSuspend.addListener(function(){
-            trace("Runtime.suspend");
-        });
+        */
     }
 }

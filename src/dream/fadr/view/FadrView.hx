@@ -14,14 +14,14 @@ class FadrView {
 
     ////////////////////////////////////////////////////////////////////////////
 
+    public var dom(default,null) : Element;
     public var palette(default,null) : ColorPalette;
     public var brightness(default,null) : Int;
     public var saturation(default,null) : Int;
     public var fadeDuration(default,null) : Int;
     public var changeInterval(default,null) : Int;
     public var currentColor(default,null) : String;
-
-    var dom : Element;
+    
     var timer : Timer;
     var isFading : Bool;
     var nextColor : String;

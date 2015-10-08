@@ -21,8 +21,7 @@ class Screensaver {
     static var timer : Timer;
 
     static function close() {
-        for( win in Window.getAll() )
-            win.close();
+        for( win in Window.getAll() ) win.close();
     }
 
     static function handleMouseMove(e) {
@@ -51,17 +50,16 @@ class Screensaver {
         window.onload = function(_) {
 
             Storage.local.get( {
-                    idleTimeout: 120,
+                    idleTimeout: 300,
+                    power: null,
                     brightness: 100,
                     saturation: 100,
                     fadeDuration: 1000,
                     changeInterval: 2000,
-                    power: null
                 },
                 function(data:SettingsData){
 
                     var palettes = dream.fadr.macro.BuildColorPalettes.fromSources(100000);
-
                     view = new FadrView( palettes, data );
                     view.start();
 
@@ -126,7 +124,10 @@ class Screensaver {
                     timer = new Timer( MOUSE_HIDE_TIMEOUT );
 
                     document.body.addEventListener( 'contextmenu', function(e){
-                        #if !debug close(); #end
+                        #if !debug
+                        e.preventDefault();
+                        close();
+                        #end
                     }, false );
 
                     document.body.addEventListener( 'mousemove', handleMouseMove, false );
@@ -141,7 +142,6 @@ class Screensaver {
                     }, false );
                     toggleMenuButton.onmouseover = function(_) isMouseOverToggleButton = true;
                     toggleMenuButton.onmouseout = function(_) isMouseOverToggleButton = false;
-
                 }
             );
         }

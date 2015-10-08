@@ -9,10 +9,10 @@ import chrome.system.Display;
 
 class Background {
 
-    static var windows : Array<AppWindow>;
+    //static var windows : Array<AppWindow>;
 
     static function startScreensaver() {
-        windows = [];
+        //windows = [];
         Display.getInfo(function(displayInfo){
             for( display in displayInfo ) {
                 Window.create( 'screensaver.html',
@@ -20,12 +20,14 @@ class Background {
                         alwaysOnTop: true,
                         visibleOnAllWorkspaces: true,
                         state: fullscreen,
-                        bounds: display.bounds
+                        bounds: display.bounds,
+                        //resizable: false,
+                        //frame: 'none'
                     },
-                    function(win){
-                        windows.push( win );
+                    function(win:AppWindow){
+                        //windows.push( win );
                         win.contentWindow.addEventListener( 'resize', function(e){
-                            stopScreensaver();
+                            //stopScreensaver();
                         });
                     }
                 );
@@ -34,88 +36,54 @@ class Background {
     }
 
     static function stopScreensaver() {
+        for( win in Window.getAll() ) win.close();
+        /*
         if( windows != null ) {
             for( win in windows ) win.close();
             windows = null;
         }
+        */
     }
 
     static function main() {
 
-        Storage.local.get( {
-                idleTimeout: 15,
-                power: chrome.Power.Level.display,
-                brightness: 100,
-                saturation: 100,
-                fadeDuration: 1000,
-                changeInterval: 1000
-            },
-            function(data){
-                Idle.setDetectionInterval( data.idleTimeout );
-                Idle.onStateChanged.addListener(function(state){
-                    switch state {
-                    case active:
-                        //stopScreensaver();
-                    case locked:
-                        stopScreensaver();
-                    case idle:
-                        startScreensaver();
+        Runtime.onLaunched.addListener( function(?e) {
+
+            Storage.local.get( {
+                    idleTimeout: 300,
+                    power: null,
+                    fadeDuration: 1000,
+                    changeInterval: 1000,
+                    brightness: 100,
+                    saturation: 100,
+                },
+                function(data:SettingsData){
+
+                    if( data.power == null ) {
+                        Power.releaseKeepAwake();
+                    } else {
+                        Power.requestKeepAwake( data.power );
                     }
-                });
-            }
-        );
 
-        Window.onBoundsChanged.addListener(function(){
-            stopScreensaver();
-        });
+                    Idle.setDetectionInterval( data.idleTimeout );
+                    Idle.onStateChanged.addListener(function(state){
+                        switch state {
+                        case active:
+                            //stopScreensaver();
+                        case locked:
+                            stopScreensaver();
+                        case idle:
+                            startScreensaver();
+                        }
+                    });
 
-        Runtime.onLaunched.addListener( function(_) {
-            startScreensaver();
-        });
+                    Window.onBoundsChanged.addListener(function(){
+                        stopScreensaver();
+                    });
 
-        /*
-        Storage.local.get( {
-                idleTimeout: 15,
-                power: chrome.Power.Level.display,
-                brightness: 100,
-                saturation: 100,
-                fadeDuration: 1000,
-                changeInterval: 1000
-            },
-
-            function(settings){
-
-                //trace(settings);
-
-                if( settings.power != null ) {
-                    Power.requestKeepAwake( settings.power );
-                } else {
-                    Power.releaseKeepAwake();
+                    startScreensaver();
                 }
-
-                Idle.setDetectionInterval( settings.idleTimeout );
-
-                Storage.onChanged.addListener(function(changes,namespace){
-                    if( changes.idleTimeout != null ) {
-                        Idle.setDetectionInterval( changes.idleTimeout.newValue );
-                    }
-                });
-
-                Idle.onStateChanged.addListener(function(state){
-                    switch state {
-                    case active:
-                        stopScreensaver();
-                    case idle:
-                        startScreensaver();
-                    case locked:
-                        //TODO ? show
-                    }
-                });
-
-                //Power.requestKeepAwake( display );
-                //Power.requestKeepAwake( system );
-            }
-        );
-        */
+            );
+        });
     }
 }

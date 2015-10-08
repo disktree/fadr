@@ -51,42 +51,50 @@ class Screensaver {
         window.onload = function(_) {
 
             Storage.local.get( {
-                    idleTimeout: 15,
+                    idleTimeout: 120,
                     brightness: 100,
                     saturation: 100,
                     fadeDuration: 1000,
-                    changeInterval: 1000,
+                    changeInterval: 2000,
                     power: null
                 },
                 function(data:SettingsData){
 
-                    view = new FadrView( data );
+                    var palettes = dream.fadr.macro.BuildColorPalettes.fromSources(100000);
+
+                    view = new FadrView( palettes, data );
                     view.start();
 
                     menu = new SettingsMenu( data );
-                    menu.onIdleTimeoutInput = function(v){
+                    menu.onIdleTimeoutChange = function(v){
                         Storage.local.set( { idleTimeout: v } );
                         Idle.setDetectionInterval( v );
-                    }
-                    menu.onBrightnessInput = function(v){
-                        Storage.local.set( { brightness: v } );
-                    }
-                    menu.onSaturationInput = function(v){
-                        Storage.local.set( { saturation: v } );
-                    }
-                    menu.onFadeDurationInput = function(v){
-                        Storage.local.set( { fadeDuration: v } );
-                    }
-                    menu.onChangeIntervalInput = function(v){
-                        Storage.local.set( { changeInterval: v } );
                     }
                     menu.onPowerLevelChange = function(level){
                         if( level == null ) {
                             Power.releaseKeepAwake();
                         } else {
-                            Power.requestKeepAwake(level);
+                            Power.requestKeepAwake( level );
                         }
                         Storage.local.set( { power:level } );
+                    }
+                    menu.onFadeDurationChange = function(v){
+                        Storage.local.set( { fadeDuration: v } );
+                    }
+                    menu.onChangeIntervalChange = function(v){
+                        Storage.local.set( { changeInterval: v } );
+                    }
+                    menu.onBrightnessInput = function(v){
+                        view.setBrightness( v );
+                    }
+                    menu.onBrightnessChange = function(v){
+                        Storage.local.set( { brightness: v } );
+                    }
+                    menu.onSaturationInput = function(v){
+                        view.setSaturation(v);
+                    }
+                    menu.onSaturationChange = function(v){
+                        Storage.local.set( { saturation: v } );
                     }
 
                     Storage.onChanged.addListener(function(changes,namespace){

@@ -5,30 +5,25 @@ import js.html.Element;
 import haxe.Timer;
 import dream.fadr.FadrSettings;
 
-@:build(dream.fadr.macro.BuildFadrView.build())
 class FadrView {
 
-    static inline function getRandomColorPalette() : ColorPalette {
-        return COLORS[Std.int(Math.random()*COLORS.length)];
-    }
-
-    ////////////////////////////////////////////////////////////////////////////
-
     public var dom(default,null) : Element;
+    public var palettes(default,null) : Array<ColorPalette>;
     public var palette(default,null) : ColorPalette;
     public var brightness(default,null) : Int;
     public var saturation(default,null) : Int;
     public var fadeDuration(default,null) : Int;
     public var changeInterval(default,null) : Int;
     public var currentColor(default,null) : String;
-    
+
     var timer : Timer;
     var isFading : Bool;
     var nextColor : String;
     var colors : Array<String>;
 
-    public function new( settings : FadrSettings ) {
+    public function new( palettes : Array<ColorPalette>, settings : FadrSettings ) {
 
+        this.palettes = palettes;
         this.brightness = settings.brightness;
         this.saturation = settings.saturation;
         this.fadeDuration = settings.fadeDuration;
@@ -40,7 +35,6 @@ class FadrView {
         colors = palette.colors.copy();
 
         dom = document.getElementById( 'fadr' );
-        //dom.style.transitionProperty = ' background-color';
         applyFilters();
         applyFadeDuration();
         dom.addEventListener( 'transitionend', handleTransitionEnd );
@@ -76,6 +70,9 @@ class FadrView {
         startFade();
     }
 
+    function getRandomColorPalette() : ColorPalette {
+        return palettes[Std.int(Math.random()*palettes.length)];
+    }
 
     function applyFadeDuration() {
         dom.style.transitionDuration = ((fadeDuration == 0 ) ? 1 : fadeDuration)+'ms';

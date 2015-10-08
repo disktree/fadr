@@ -7,35 +7,6 @@ body {
 }
 
 #fadr {
-    //cursor: none;
-}
-
-@max-width: 340px;
-@slider-thumb-size : 14px;
-
-@import "../style/settings.less";
-
-#settings {
-    top: 48px;
-    left: 72px;
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-#settings #title {
-    max-width: 150px;
-    margin-bottom: 30px;
-}
-
-#settings .column {
-    //display: inline-block;
-}
-
-#settings #power span {
-    margin-right: 2px;
-}
-#settings #power span.power-setting {
-    text-decoration: line-through;
-    cursor: pointer;
 }
 
 #settings-toggle {
@@ -48,5 +19,62 @@ body {
     cursor: pointer;
     z-index: 1000;
     opacity: 0;
-    transition: opacity 0.1s;
+    transition: opacity 0.15s;
+}
+
+@max-width: 340px;
+@slider-thumb-size : 14px;
+
+@import "../style/settings.less";
+
+#settings {
+    top: 70px;
+    left: 90px;
+    visibility: hidden;
+}
+
+#settings #title {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+#settings section.column {
+    width: 260px;
+    margin-right: 10px;
+    float: left;
+}
+
+#settings section.column div.control {
+    margin-bottom: 10px;
+}
+
+#settings section.column div.control div.title {
+    float: left;
+    margin-right: 5px;
+}
+
+#settings #power span {
+    margin-right: 2px;
+}
+#settings .power-setting {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    right: 10px;
+    bottom: 1px;
+    mix-blend-mode: difference;
+    -webkit-user-select: none;
+    z-index: 1000;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.15s;
+    transform: scale(0.5,0.5);
+}
+footer img:hover {
+    transform: scale(0.75,0.75);
 }

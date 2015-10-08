@@ -1,10 +1,11 @@
 {
     "name": "Fadr",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Color fading screensaver",
     "manifest_version": 2,
     "minimum_chrome_version": "44",
     "offline_enabled": true,
+    "short_name": "Fadr",
     "app": {
         "background": {
             "scripts": ["background.js"]

@@ -5,7 +5,7 @@
 -lib chrome-app
 -dce full
 -D analyzer
--debug
+#-debug
 #--no-traces
 
 -cmd lessc res/chrome/screensaver.less build/chrome/screensaver.css

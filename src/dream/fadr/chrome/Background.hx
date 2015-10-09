@@ -9,10 +9,7 @@ import chrome.system.Display;
 
 class Background {
 
-    //static var windows : Array<AppWindow>;
-
     static function startScreensaver() {
-        //windows = [];
         Display.getInfo(function(displayInfo){
             for( display in displayInfo ) {
                 Window.create( 'screensaver.html',
@@ -21,13 +18,10 @@ class Background {
                         visibleOnAllWorkspaces: true,
                         state: fullscreen,
                         bounds: display.bounds,
-                        //resizable: false,
-                        //frame: 'none'
                     },
                     function(win:AppWindow){
-                        //windows.push( win );
                         win.contentWindow.addEventListener( 'resize', function(e){
-                            //stopScreensaver();
+                            stopScreensaver();
                         });
                     }
                 );
@@ -37,12 +31,6 @@ class Background {
 
     static function stopScreensaver() {
         for( win in Window.getAll() ) win.close();
-        /*
-        if( windows != null ) {
-            for( win in windows ) win.close();
-            windows = null;
-        }
-        */
     }
 
     static function main() {
@@ -68,9 +56,7 @@ class Background {
                     Idle.setDetectionInterval( data.idleTimeout );
                     Idle.onStateChanged.addListener(function(state){
                         switch state {
-                        case active:
-                            //stopScreensaver();
-                        case locked:
+                        case active,locked:
                             stopScreensaver();
                         case idle:
                             startScreensaver();

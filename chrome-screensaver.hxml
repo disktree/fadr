@@ -1,7 +1,6 @@
 -js build/chrome/screensaver.js
 -main dream.fadr.chrome.Screensaver
 -cp src
--cp ../../../../lib/om/src
 -lib chrome-app
 -dce full
 -D analyzer

@@ -1,7 +1,6 @@
 -js build/chrome/background.js
 -main dream.fadr.chrome.Background
 -cp src
--cp ../../../../lib/om/src
 -lib chrome-app
 -dce full
 -D analyzer

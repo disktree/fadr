@@ -36,40 +36,45 @@ class Background {
     static function main() {
 
         Runtime.onLaunched.addListener( function(?e) {
-
-            Storage.local.get( {
-                    idleTimeout: 300,
-                    power: null,
-                    fadeDuration: 1000,
-                    changeInterval: 1000,
-                    brightness: 100,
-                    saturation: 100,
-                },
-                function(data:SettingsData){
-
-                    if( data.power == null ) {
-                        Power.releaseKeepAwake();
-                    } else {
-                        Power.requestKeepAwake( data.power );
-                    }
-
-                    Idle.setDetectionInterval( data.idleTimeout );
-                    Idle.onStateChanged.addListener(function(state){
-                        switch state {
-                        case active,locked:
-                            stopScreensaver();
-                        case idle:
-                            startScreensaver();
-                        }
-                    });
-
-                    Window.onBoundsChanged.addListener(function(){
-                        stopScreensaver();
-                    });
-
-                    startScreensaver();
-                }
-            );
+            startScreensaver();
         });
+
+        Idle.onStateChanged.addListener(function(state){
+            switch state {
+            case active:
+            case locked:
+                stopScreensaver();
+            case idle:
+                startScreensaver();
+            }
+        });
+
+        Storage.local.get( {
+                idleTimeout: 300,
+                power: null,
+                fadeDuration: 1000,
+                changeInterval: 1000,
+                brightness: 100,
+                saturation: 100,
+            },
+            function(data:SettingsData){
+
+                Idle.setDetectionInterval( data.idleTimeout );
+
+                if( data.power == null ) {
+                    Power.releaseKeepAwake();
+                } else {
+                    Power.requestKeepAwake( data.power );
+                }
+
+                /*
+                Window.onBoundsChanged.addListener(function(){
+                    //stopScreensaver();
+                });
+                */
+
+                //startScreensaver();
+            }
+        );
     }
 }

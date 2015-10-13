@@ -9,7 +9,11 @@ import chrome.system.Display;
 
 class Background {
 
+    static var active = false;
+
     static function startScreensaver() {
+        if( active )
+            return;
         Display.getInfo(function(displayInfo){
             for( display in displayInfo ) {
                 Window.create( 'screensaver.html',
@@ -27,10 +31,12 @@ class Background {
                 );
             }
         });
+        active = true;
     }
 
     static function stopScreensaver() {
         for( win in Window.getAll() ) win.close();
+        active = false;
     }
 
     static function main() {
@@ -72,8 +78,6 @@ class Background {
                     //stopScreensaver();
                 });
                 */
-
-                //startScreensaver();
             }
         );
     }

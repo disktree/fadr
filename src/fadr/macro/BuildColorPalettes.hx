@@ -1,4 +1,4 @@
-package dream.fadr.macro;
+package fadr.macro;
 
 #if macro
 import haxe.macro.Context;

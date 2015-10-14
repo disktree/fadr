@@ -1,4 +1,4 @@
-package dream.fadr.view;
+package fadr.view;
 
 import js.Browser.document;
 import js.html.DivElement;

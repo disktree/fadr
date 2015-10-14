@@ -1,5 +1,5 @@
 -js build/chrome/background.js
--main dream.fadr.chrome.Background
+-main fadr.chrome.Background
 -cp src
 -lib chrome-app
 -dce full

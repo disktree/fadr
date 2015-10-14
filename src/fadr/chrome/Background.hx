@@ -1,4 +1,4 @@
-package dream.fadr.chrome;
+package fadr.chrome;
 
 import chrome.Idle;
 import chrome.Power;

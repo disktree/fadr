@@ -1,4 +1,4 @@
-package dream.fadr.android;
+package fadr.android;
 
 import js.Browser;
 import haxe.Json;

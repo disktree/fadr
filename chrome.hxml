@@ -4,4 +4,4 @@
 --next
 -cp src
 -cp ../../lib/om/src
---macro dream.fadr.chrome.Build.app()
+--macro fadr.chrome.Build.app()

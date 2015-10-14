@@ -1,4 +1,4 @@
-package dream.fadr.chrome;
+package fadr.chrome;
 
 import js.Browser.document;
 import js.Browser.window;
@@ -7,8 +7,7 @@ import haxe.Timer;
 import chrome.Storage;
 import chrome.Power;
 import chrome.Idle;
-//import chrome.app.Window;
-import dream.fadr.view.FadrView;
+import fadr.view.FadrView;
 
 class App {
 
@@ -61,7 +60,7 @@ class App {
                 },
                 function(data:SettingsData){
 
-                    var palettes = dream.fadr.macro.BuildColorPalettes.fromSources(100000);
+                    var palettes = fadr.macro.BuildColorPalettes.fromSources(100000);
                     view = new FadrView( palettes, data );
                     view.start();
 

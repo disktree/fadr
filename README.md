@@ -1,9 +1,7 @@
 
-# Fadr
+![Icon](data/fadr-title-black.png)
 
 Color fading environment beautifier.
-
-![Icon](res/chrome/icon/chrome-128.png)
 
 ---
 

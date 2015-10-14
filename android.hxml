@@ -5,6 +5,6 @@
 -cp src
 -cp ../../lib/om/src
 -D android
---macro dream.fadr.android.Build.app()
+--macro fadr.android.Build.app()
 
 -cmd cp -r build/android/* ~/dev/android/fadr/assets

@@ -1,5 +1,5 @@
 -js build/chrome/app.js
--main dream.fadr.chrome.App
+-main fadr.chrome.App
 -cp src
 -lib chrome-app
 -dce full

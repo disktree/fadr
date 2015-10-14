@@ -1,4 +1,4 @@
-package dream.fadr;
+package fadr;
 
 typedef FadrSettings = {
 

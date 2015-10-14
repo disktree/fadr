@@ -1,5 +1,5 @@
 -js build/android/dream.js
--main dream.fadr.android.Dream
+-main fadr.android.Dream
 -cp src
 -cp ../../../../lib/om/src
 -dce full

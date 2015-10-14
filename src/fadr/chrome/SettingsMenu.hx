@@ -1,8 +1,8 @@
-package dream.fadr.chrome;
+package fadr.chrome;
 
 import js.Browser.document;
 import js.html.Element;
-import dream.fadr.view.Slider;
+import fadr.view.Slider;
 
 class SettingsMenu {
 

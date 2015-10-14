@@ -1,9 +1,9 @@
-package dream.fadr.view;
+package fadr.view;
 
 import js.Browser.document;
 import js.html.Element;
 import haxe.Timer;
-import dream.fadr.FadrSettings;
+import fadr.FadrSettings;
 
 class FadrView {
 

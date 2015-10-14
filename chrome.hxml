@@ -1,5 +1,5 @@
 -cmd haxe chrome-background.hxml
--cmd haxe chrome-screensaver.hxml
+-cmd haxe chrome-app.hxml
 
 --next
 -cp src

@@ -19,7 +19,7 @@ class Background {
         active = true;
         Display.getInfo(function(displayInfo){
             for( display in displayInfo ) {
-                Window.create( 'screensaver.html',
+                Window.create( 'app.html',
                     {
                         alwaysOnTop: true,
                         visibleOnAllWorkspaces: true,

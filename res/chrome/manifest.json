@@ -1,15 +1,13 @@
 {
     "name": "Fadr",
-    "version": "1.0.10",
-    "description": "Color fading screensaver",
+    "version": "1.0.13",
+    "description": "Environment colorizer/beautifier",
     "manifest_version": 2,
     "minimum_chrome_version": "44",
     "offline_enabled": true,
     "short_name": "Fadr",
     "app": {
-        "background": {
-            "scripts": ["background.js"]
-        }
+        "background": { "scripts": ["background.js"] }
     },
     "permissions": ["idle","storage","power","system.display","app.window.alwaysOnTop"],
     "icons": {

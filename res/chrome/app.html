@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <style media="screen">body{background:#000;}</style>
-        <link rel="stylesheet" href="screensaver.css">
-        <script src="screensaver.js" defer></script>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.js" defer></script>
     </head>
     <body>
 
@@ -17,20 +17,6 @@
             <div>
                 <img id="title" src="image/fadr-title.png"/>
             </div>
-
-            <section class="column">
-                <div class="control">
-                    <div class="title">IDLE TIMEOUT</div>
-                    <div id="idle-timeout-label" class="label"></div>
-                    <input type="range" id="idle-timeout" class="slider" min="15" max="600" step="1" tabindex="0"/>
-                </div>
-                <div class="control">
-                    <span>KEEP</span>
-                    <span id="power-display" class="power-setting">DISPLAY</span>
-                    <span id="power-system" class="power-setting">SYSTEM</span>
-                    <span>AWAKE</span>
-                </div>
-            </section>
 
             <section class="column">
                 <div class="control" title="Pause between fades in milli-seconds">
@@ -55,6 +41,27 @@
                     <div class="title">SATURATION</div>
                     <div id="saturation-label" class="label"></div>
                     <input type="range" id="saturation" class="slider" min="0" max="200" step="1" tabindex="0"/>
+                </div>
+            </section>
+
+            <section class="column">
+                    <!--
+                <div class="control">
+                    <span>SCREENSAVER</span>
+                    <span id="screensaver-on">ON</span>
+                    <span id="screensaver-off">OFF</span>
+                </div>
+                    -->
+                <div class="control">
+                    <div class="title">IDLE TIMEOUT</div>
+                    <div id="idle-timeout-label" class="label"></div>
+                    <input type="range" id="idle-timeout" class="slider" min="15" max="600" step="1" tabindex="0"/>
+                </div>
+                <div class="control">
+                    <span>KEEP</span>
+                    <span id="power-display" class="power-setting">DISPLAY</span>
+                    <span id="power-system" class="power-setting">SYSTEM</span>
+                    <span>AWAKE</span>
                 </div>
             </section>
 

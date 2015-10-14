@@ -10,7 +10,7 @@ import chrome.Idle;
 //import chrome.app.Window;
 import dream.fadr.view.FadrView;
 
-class Screensaver {
+class App {
 
     static inline var MOUSE_HIDE_TIMEOUT = 2500;
 

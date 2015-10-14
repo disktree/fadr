@@ -13,7 +13,7 @@ class Build {
         syncDirectory( 'res/image', '$dst/image' );
 
         syncFile( 'res/chrome/manifest.json', '$dst/manifest.json' );
-        syncFile( 'res/chrome/screensaver.html', '$dst/screensaver.html' );
-        syncFile( 'res/chrome/settings.html', '$dst/settings.html' );
+        syncFile( 'res/chrome/app.html', '$dst/app.html' );
+        //syncFile( 'res/chrome/settings.html', '$dst/settings.html' );
     }
 }

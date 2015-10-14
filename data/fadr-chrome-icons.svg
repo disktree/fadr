@@ -19,6 +19,18 @@
    sodipodi:docname="fadr-chrome-icons.svg">
   <defs
      id="defs6875">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4322">
+      <stop
+         style="stop-color:#df0002;stop-opacity:0.588"
+         offset="0"
+         id="stop4324" />
+      <stop
+         style="stop-color:#0008ff;stop-opacity:0"
+         offset="1"
+         id="stop4326" />
+    </linearGradient>
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4338-0-7"
@@ -28,7 +40,7 @@
        fx="779.27777"
        fy="808.34595"
        r="220"
-       gradientTransform="matrix(1.9738714,7.9358129e-8,-3.476181e-8,1.1664369,-1542.813,-526.7356)"
+       gradientTransform="matrix(0.46404041,1.8656422e-8,0,0.27421941,-52.995668,187.42829)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient4338-0-7"
@@ -51,7 +63,7 @@
        fx="779.27777"
        fy="808.34595"
        r="220"
-       gradientTransform="matrix(1.9738714,7.9358129e-8,-3.476181e-8,1.1664369,-1542.813,-526.7356)"
+       gradientTransform="matrix(0.16233746,0,0,0.09593148,291.8993,291.63088)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -62,7 +74,18 @@
        fx="779.27777"
        fy="808.34595"
        r="220"
-       gradientTransform="matrix(1.9738714,7.9358129e-8,-3.476181e-8,1.1664369,-1542.813,-526.7356)"
+       gradientTransform="matrix(0.05947738,0,0,0.03514748,426.49915,324.77567)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4322"
+       id="radialGradient5954-9-8"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.25163427,0,0,0.21937666,112.37268,231.30477)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -72,9 +95,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="488.57173"
-     inkscape:cy="688.03673"
+     inkscape:zoom="3.0939597"
+     inkscape:cx="369"
+     inkscape:cy="642.81995"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -91,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -132,266 +155,123 @@
          id="tspan4539-4-5-5-8-7"
          x="258.16302"
          y="296.23804">128</tspan></text>
-    <g
-       id="g7722"
-       inkscape:export-filename="/home/tong/dev/project/100-dreams-1-fadr/res/chrome/icon/chrome-128.png"
+    <rect
+       style="opacity:1;fill:url(#radialGradient5954-9);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0"
+       width="89.236107"
+       height="65.957123"
+       x="264.00266"
+       y="376.11389"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <g
-         transform="matrix(0.23509151,0,0,0.23509151,309.70657,311.25936)"
-         id="g7561">
-        <rect
-           style="opacity:1;fill:url(#radialGradient5954-9);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4136-0-0"
-           width="379.58029"
-           height="280.55936"
-           x="-194.4091"
-           y="275.86935" />
-        <g
-           id="g6634-2"
-           transform="matrix(0.41258727,0,0,0.41258727,-337.18916,548.89688)">
-          <g
-             transform="matrix(4.3632896,0,0,4.3632896,78.892219,-2209.7518)"
-             id="text4842-1-3-0-0"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'DS Clone3D';-inkscape-font-specification:'DS Clone3D, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.07399998;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
-            <path
-               inkscape:connector-curvature="0"
-               id="path4878-0-6-1-8"
-               d="m 140.04,429.36219 -11.72,11.72 -11.28,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,5.76 -5.48,5.48 5.48,0 0,5.8 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4880-53-9-6-2"
-               d="m 172.8525,440.60219 -11.72,11.72 -5.8,0 0,-11.24 -5.48,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,28.28 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4882-6-1-9-4"
-               d="m 205.665,435.00219 -17.36,17.32 -22.68,0 0,-28.28 11.72,-11.72 22.68,0 0,5.64 5.64,0 0,17.04 z m -17.56,-0.16 0,-5.04 -4.96,0 0,5.04 4.96,0 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4884-4-4-7-0"
-               d="m 238.4775,429.36219 -5.64,5.64 0,5.64 -11.72,11.72 -5.76,0 0,-11.12 -11.12,11.12 -5.8,0 0,-28.32 11.72,-11.72 28.32,0 0,17.04 z" />
-          </g>
-          <g
-             style="opacity:0.03200001"
-             id="g4931-6-5-2-8"
-             transform="matrix(4.3632896,0,0,4.3632896,78.892219,-4696.827)">
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4865-5-3-9-9"
-               d="m 117.52271,1010.4435 -5.64,0 0,-28.11999 28.16,0 0,5.64 -22.52,0 0,5.6 22.52,0 0,5.64 -22.52,0 0,11.23999 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4867-9-7-8-6"
-               d="m 172.85521,1010.4435 -5.64,0 0,-11.23999 -16.88,0 0,11.23999 -5.64,0 0,-28.11999 28.16,0 0,28.11999 z m -5.64,-16.87999 0,-5.6 -16.88,0 0,5.6 16.88,0 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4869-2-3-9-2"
-               d="m 205.66771,1004.8435 -5.64,0 0,5.6 -22.52,0 0,-28.11999 22.52,0 0,5.64 5.64,0 0,16.87999 z m -5.72,0 0,-16.87999 -16.8,0 0,16.87999 16.8,0 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4871-1-5-4-9"
-               d="m 232.84021,1010.4835 -5.64,0 0,-11.27999 -11.24,0 0,11.27999 -5.64,0 0,-28.15999 28.16,0 0,16.88 -5.64,0 0,11.27999 z m 0,-16.87999 0,-5.64 -16.88,0 0,5.64 16.88,0 z" />
-          </g>
-        </g>
-      </g>
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/project/100-dreams-1-fadr/res/chrome/icon/chrome-128.png"
-         y="345.74338"
-         x="244.8257"
-         height="128"
-         width="128"
-         id="rect4303-7-1-2"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path3587"
-         d="m 248.82573,353.65062 120,0 0,120 -120,0 z"
-         inkscape:connector-curvature="0"
-         style="fill:none" />
-      <path
-         id="path3589"
-         d="m 348.82573,443.65062 c 5.5,0 9.95,-4.5 9.95,-10 l 0.05,-50 c 0,-5.5 -4.5,-10 -10,-10 l -80,0 c -5.5,0 -10,4.5 -10,10 l 0,50 c 0,5.5 4.5,10 10,10 l -20,0 0,10 120,0 0,-10 -20,0 z m -80,-60 80,0 0,50 -80,0 0,-50 z"
-         inkscape:connector-curvature="0"
-         style="fill:#0b0b0b;fill-opacity:1" />
-    </g>
-    <g
-       id="g7740"
-       inkscape:export-filename="/home/tong/dev/project/100-dreams-1-fadr/res/chrome/icon/chrome-48.png"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-2"
+       width="128"
+       height="128"
+       x="244.8257"
+       y="345.74338"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/project/100-dreams-1-fadr/res/chrome/icon/chrome-48.png"
-         y="345.74338"
-         x="394.82568"
-         height="48"
-         width="48"
-         id="rect4303-7-1-2-3"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path3587-5"
-         d="m 396.82573,348.74339 44,0 0,44 -44,0 z"
-         inkscape:connector-curvature="0"
-         style="fill:none" />
-      <g
-         transform="matrix(0.08224318,0,0,0.08224318,418.78515,334.95129)"
-         id="g7561-5">
-        <rect
-           style="opacity:1;fill:url(#radialGradient5954-9-5);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4136-0-0-8"
-           width="379.58029"
-           height="280.55936"
-           x="-194.4091"
-           y="275.86935" />
-        <g
-           id="g6634-2-9"
-           transform="matrix(0.41258727,0,0,0.41258727,-337.18916,548.89688)">
-          <g
-             transform="matrix(4.3632896,0,0,4.3632896,78.892219,-2209.7518)"
-             id="text4842-1-3-0-0-1"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'DS Clone3D';-inkscape-font-specification:'DS Clone3D, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.07399998;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
-            <path
-               inkscape:connector-curvature="0"
-               id="path4878-0-6-1-8-7"
-               d="m 140.04,429.36219 -11.72,11.72 -11.28,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,5.76 -5.48,5.48 5.48,0 0,5.8 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4880-53-9-6-2-1"
-               d="m 172.8525,440.60219 -11.72,11.72 -5.8,0 0,-11.24 -5.48,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,28.28 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4882-6-1-9-4-4"
-               d="m 205.665,435.00219 -17.36,17.32 -22.68,0 0,-28.28 11.72,-11.72 22.68,0 0,5.64 5.64,0 0,17.04 z m -17.56,-0.16 0,-5.04 -4.96,0 0,5.04 4.96,0 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4884-4-4-7-0-2"
-               d="m 238.4775,429.36219 -5.64,5.64 0,5.64 -11.72,11.72 -5.76,0 0,-11.12 -11.12,11.12 -5.8,0 0,-28.32 11.72,-11.72 28.32,0 0,17.04 z" />
-          </g>
-          <g
-             style="opacity:0.03200001"
-             id="g4931-6-5-2-8-2"
-             transform="matrix(4.3632896,0,0,4.3632896,78.892219,-4696.827)">
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4865-5-3-9-9-6"
-               d="m 117.52271,1010.4435 -5.64,0 0,-28.11999 28.16,0 0,5.64 -22.52,0 0,5.6 22.52,0 0,5.64 -22.52,0 0,11.23999 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4867-9-7-8-6-6"
-               d="m 172.85521,1010.4435 -5.64,0 0,-11.23999 -16.88,0 0,11.23999 -5.64,0 0,-28.11999 28.16,0 0,28.11999 z m -5.64,-16.87999 0,-5.6 -16.88,0 0,5.6 16.88,0 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4869-2-3-9-2-4"
-               d="m 205.66771,1004.8435 -5.64,0 0,5.6 -22.52,0 0,-28.11999 22.52,0 0,5.64 5.64,0 0,16.87999 z m -5.72,0 0,-16.87999 -16.8,0 0,16.87999 16.8,0 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4871-1-5-4-9-2"
-               d="m 232.84021,1010.4835 -5.64,0 0,-11.27999 -11.24,0 0,11.27999 -5.64,0 0,-28.15999 28.16,0 0,16.88 -5.64,0 0,11.27999 z m 0,-16.87999 0,-5.64 -16.88,0 0,5.64 16.88,0 z" />
-          </g>
-        </g>
-      </g>
-      <path
-         id="path3589-3"
-         d="m 433.4924,381.74339 c 2.01666,0 3.64833,-1.65 3.64833,-3.66667 l 0.0183,-18.33333 c 0,-2.01667 -1.65,-3.66667 -3.66666,-3.66667 l -29.33334,0 c -2.01666,0 -3.66666,1.65 -3.66666,3.66667 l 0,18.33333 c 0,2.01667 1.65,3.66667 3.66666,3.66667 l -7.33333,0 0,3.66667 44,0 0,-3.66667 -7.33333,0 z m -29.33334,-22 29.33334,0 0,18.33333 -29.33334,0 0,-18.33333 z"
-         inkscape:connector-curvature="0"
-         style="fill:#0b0b0b;fill-opacity:1" />
-    </g>
-    <g
-       id="g7758"
-       inkscape:export-filename="/home/tong/dev/project/100-dreams-1-fadr/res/chrome/icon/chrome-16.png"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 248.82573,353.65062 120,0 0,120 -120,0 z"
+       id="path3587"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/project/100-dreams-1-fadr/res/chrome/icon/chrome-16.png"
-         y="345.74341"
-         x="464.82574"
-         height="16"
-         width="16"
-         id="rect4303-7-1-2-3-0"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path3587-5-0"
-         d="m 464.88859,345.74339 16,0 0,16 -16,0 z"
-         inkscape:connector-curvature="0"
-         style="fill:none" />
-      <g
-         transform="matrix(0.03013235,0,0,0.03013235,472.98773,340.64745)"
-         id="g7561-5-3">
-        <rect
-           style="opacity:1;fill:url(#radialGradient5954-9-5-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect4136-0-0-8-5"
-           width="379.58029"
-           height="280.55936"
-           x="-194.4091"
-           y="275.86935" />
-        <g
-           id="g6634-2-9-0"
-           transform="matrix(0.41258727,0,0,0.41258727,-337.18916,548.89688)">
-          <g
-             transform="matrix(4.3632896,0,0,4.3632896,78.892219,-2209.7518)"
-             id="text4842-1-3-0-0-1-6"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'DS Clone3D';-inkscape-font-specification:'DS Clone3D, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.07399998;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
-            <path
-               inkscape:connector-curvature="0"
-               id="path4878-0-6-1-8-7-1"
-               d="m 140.04,429.36219 -11.72,11.72 -11.28,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,5.76 -5.48,5.48 5.48,0 0,5.8 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4880-53-9-6-2-1-7"
-               d="m 172.8525,440.60219 -11.72,11.72 -5.8,0 0,-11.24 -5.48,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,28.28 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4882-6-1-9-4-4-2"
-               d="m 205.665,435.00219 -17.36,17.32 -22.68,0 0,-28.28 11.72,-11.72 22.68,0 0,5.64 5.64,0 0,17.04 z m -17.56,-0.16 0,-5.04 -4.96,0 0,5.04 4.96,0 z" />
-            <path
-               inkscape:connector-curvature="0"
-               id="path4884-4-4-7-0-2-0"
-               d="m 238.4775,429.36219 -5.64,5.64 0,5.64 -11.72,11.72 -5.76,0 0,-11.12 -11.12,11.12 -5.8,0 0,-28.32 11.72,-11.72 28.32,0 0,17.04 z" />
-          </g>
-          <g
-             style="opacity:0.03200001"
-             id="g4931-6-5-2-8-2-2"
-             transform="matrix(4.3632896,0,0,4.3632896,78.892219,-4696.827)">
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4865-5-3-9-9-6-2"
-               d="m 117.52271,1010.4435 -5.64,0 0,-28.11999 28.16,0 0,5.64 -22.52,0 0,5.6 22.52,0 0,5.64 -22.52,0 0,11.23999 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4867-9-7-8-6-6-1"
-               d="m 172.85521,1010.4435 -5.64,0 0,-11.23999 -16.88,0 0,11.23999 -5.64,0 0,-28.11999 28.16,0 0,28.11999 z m -5.64,-16.87999 0,-5.6 -16.88,0 0,5.6 16.88,0 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4869-2-3-9-2-4-2"
-               d="m 205.66771,1004.8435 -5.64,0 0,5.6 -22.52,0 0,-28.11999 22.52,0 0,5.64 5.64,0 0,16.87999 z m -5.72,0 0,-16.87999 -16.8,0 0,16.87999 16.8,0 z" />
-            <path
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-               inkscape:connector-curvature="0"
-               id="path4871-1-5-4-9-2-9"
-               d="m 232.84021,1010.4835 -5.64,0 0,-11.27999 -11.24,0 0,11.27999 -5.64,0 0,-28.15999 28.16,0 0,16.88 -5.64,0 0,11.27999 z m 0,-16.87999 0,-5.64 -16.88,0 0,5.64 16.88,0 z" />
-          </g>
-        </g>
-      </g>
-      <path
-         id="path3589-3-6"
-         d="m 478.22192,357.74339 c 0.73334,0 1.32667,-0.6 1.32667,-1.33333 l 0.007,-6.66667 c 0,-0.73333 -0.6,-1.33333 -1.33334,-1.33333 l -10.66666,0 c -0.73334,0 -1.33334,0.6 -1.33334,1.33333 l 0,6.66667 c 0,0.73333 0.6,1.33333 1.33334,1.33333 l -2.66667,0 0,1.33333 16,0 0,-1.33333 -2.66667,0 z m -10.66666,-8 10.66666,0 0,6.66667 -10.66666,0 0,-6.66667 z"
-         inkscape:connector-curvature="0"
-         style="fill:#0b0b0b;fill-opacity:1" />
-    </g>
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#202020;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 348.82573,443.65062 c 5.5,0 9.95,-4.5 9.95,-10 l 0.05,-50 c 0,-5.5 -4.5,-10 -10,-10 l -80,0 c -5.5,0 -10,4.5 -10,10 l 0,50 c 0,5.5 4.5,10 10,10 l -20,0 0,10 120,0 0,-10 -20,0 z m -80,-60 80,0 0,50 -80,0 0,-50 z"
+       id="path3589"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-2-3"
+       width="48"
+       height="48"
+       x="394.82568"
+       y="345.74338"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-48.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 396.82573,348.74339 44,0 0,44 -44,0 z"
+       id="path3587-5"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-48.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#radialGradient5954-9-5);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-8"
+       width="31.21789"
+       height="23.074093"
+       x="402.79633"
+       y="357.63965"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-48.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#202020;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 433.4924,381.74339 c 2.01666,0 3.64833,-1.65 3.64833,-3.66667 l 0.0183,-18.33333 c 0,-2.01667 -1.65,-3.66667 -3.66666,-3.66667 l -29.33334,0 c -2.01666,0 -3.66666,1.65 -3.66666,3.66667 l 0,18.33333 c 0,2.01667 1.65,3.66667 3.66666,3.66667 l -7.33333,0 0,3.66667 44,0 0,-3.66667 -7.33333,0 z m -29.33334,-22 29.33334,0 0,18.33333 -29.33334,0 0,-18.33333 z"
+       id="path3589-3"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-48.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-2-3-0"
+       width="16"
+       height="16"
+       x="464.82574"
+       y="345.74341"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 464.88859,345.74339 16,0 0,16 -16,0 z"
+       id="path3587-5-0"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#radialGradient5954-9-5-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-8-5"
+       width="11.437646"
+       height="8.4539127"
+       x="467.12973"
+       y="348.96005"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#202020;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 478.22192,357.74339 c 0.73334,0 1.32667,-0.6 1.32667,-1.33333 l 0.007,-6.66667 c 0,-0.73333 -0.6,-1.33333 -1.33334,-1.33333 l -10.66666,0 c -0.73334,0 -1.33334,0.6 -1.33334,1.33333 l 0,6.66667 c 0,0.73333 0.6,1.33333 1.33334,1.33333 l -2.66667,0 0,1.33333 16,0 0,-1.33333 -2.66667,0 z m -10.66666,-8 10.66666,0 0,6.66667 -10.66666,0 0,-6.66667 z"
+       id="path3589-3-6"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:url(#radialGradient5954-9-8);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-7"
+       width="116.99889"
+       height="116.04265"
+       x="249.96622"
+       y="350.61563"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

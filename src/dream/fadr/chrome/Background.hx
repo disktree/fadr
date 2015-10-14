@@ -7,6 +7,8 @@ import chrome.app.Runtime;
 import chrome.app.Window;
 import chrome.system.Display;
 
+@:keep
+@:expose
 class Background {
 
     static var active = false;
@@ -14,6 +16,7 @@ class Background {
     static function startScreensaver() {
         if( active )
             return;
+        active = true;
         Display.getInfo(function(displayInfo){
             for( display in displayInfo ) {
                 Window.create( 'screensaver.html',
@@ -31,15 +34,20 @@ class Background {
                 );
             }
         });
-        active = true;
     }
 
     static function stopScreensaver() {
-        for( win in Window.getAll() ) win.close();
-        active = false;
+        if( active ) {
+            for( win in Window.getAll() )
+                win.close();
+            active = false;
+        }
     }
 
     static function main() {
+
+        // Store into window object to provide access from app
+        untyped js.Browser.window.Fadr = Background;
 
         Runtime.onLaunched.addListener( function(?e) {
             startScreensaver();

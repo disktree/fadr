@@ -7,7 +7,7 @@ import haxe.Timer;
 import chrome.Storage;
 import chrome.Power;
 import chrome.Idle;
-import chrome.app.Window;
+//import chrome.app.Window;
 import dream.fadr.view.FadrView;
 
 class Screensaver {
@@ -21,7 +21,9 @@ class Screensaver {
     static var timer : Timer;
 
     static function close() {
-        for( win in Window.getAll() ) win.close();
+        chrome.Runtime.getBackgroundPage(function(win:js.html.Window){
+            untyped win.Fadr.stopScreensaver();
+        });
     }
 
     static function handleMouseMove(e) {

@@ -1,7 +1,11 @@
 package disktree.net.fadr;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.webkit.WebSettings;
@@ -19,7 +23,9 @@ public class SettingsActivity extends Activity {
 
         this.requestWindowFeature( Window.FEATURE_NO_TITLE );
 
-        getWindow().getDecorView().setSystemUiVisibility( View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_FULLSCREEN );
+        getWindow().getDecorView().setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
+            View.SYSTEM_UI_FLAG_FULLSCREEN );
 
         setContentView( R.layout.activity_settings );
 
@@ -40,5 +46,30 @@ public class SettingsActivity extends Activity {
         settings.setLayoutAlgorithm(LayoutAlgorithm.NORMAL);
 
         webview.loadUrl( "file:///android_asset/settings.html" );
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate( R.menu.meta, menu );
+        return super.onCreateOptionsMenu( menu );
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch( item.getItemId() ) {
+            case R.id.action_github:
+                openURI( getString( R.string.action_github_uri ) );
+                return true;
+            case R.id.action_chrome:
+                openURI( getString( R.string.action_chrome_uri ) );
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void openURI( String uri ) {
+        Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( uri ) );
+        startActivity( intent );
     }
 }

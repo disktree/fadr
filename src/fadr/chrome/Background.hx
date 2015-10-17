@@ -53,13 +53,13 @@ class Background {
         });
 
         Storage.local.get( {
-                //screensaver: false, //TODO
-                idleTimeout: 600,
-                //power: null, //TODO
                 fadeDuration: 1000,
                 changeInterval: 1000,
                 brightness: 100,
                 saturation: 100,
+                //screensaver: false, //TODO
+                idleTimeout: 600,
+                powerLevel: null,
             },
             function(settings:SettingsData){
 

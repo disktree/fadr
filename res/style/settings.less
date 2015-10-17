@@ -30,13 +30,34 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: @slider-thumb-size/2;
 }
 
+
+div.select {
+    margin-bottom: 10px;
+}
+div.select span:first-child {
+    margin-right: 5px;
+}
+div.select span.option {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+div.select span.option.selected {
+    text-decoration: none;
+}
+div.select span.option:not(:nth-child(2)):before {
+    content: "/";
+}
+div.select span:last-child {
+    margin-left: 5px;
+}
+
 #settings {
     display: table;
     position: fixed;
-    top: @settings-indent;
-    left: @settings-indent;
-    right: @settings-indent;
-    bottom: @settings-indent;
+    top: @settings-top;
+    left: @settings-left;
+    //right: @settings-indent;
+    //bottom: @settings-indent;
     z-index: 1000;
     text-transform: uppercase;
     .blend-mode;

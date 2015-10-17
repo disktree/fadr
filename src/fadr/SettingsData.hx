@@ -9,7 +9,8 @@ typedef SettingsData = {
     var saturation : Int;
 
     #if chrome
+    //var screensaver : Bool;
+    var powerLevel : chrome.Power.Level;
     var idleTimeout : Int;
-    //var powerLevel : chrome.Power.Level;
     #end
 }

@@ -11,6 +11,7 @@ class App extends fadr.App {
         super.init();
 
         chrome.Storage.onChanged.addListener(function(changes,namespace){
+
             if( changes.changeInterval != null ) {
                 view.changeInterval = menu.changeInterval.value = changes.changeInterval.newValue;
             }
@@ -22,6 +23,16 @@ class App extends fadr.App {
             }
             if( changes.saturation != null ) {
                 view.saturation = menu.saturation.value = changes.saturation.newValue;
+            }
+
+            if( changes.powerLevel != null ) {
+                if( changes.powerLevel.newValue == null ) {
+                    menu.powerLevel.unselect( changes.powerLevel.oldValue );
+                    chrome.Power.releaseKeepAwake();
+                } else {
+                    menu.powerLevel.select( changes.powerLevel.newValue );
+                    chrome.Power.requestKeepAwake( changes.powerLevel.newValue );
+                }
             }
             if( changes.idleTimeout != null ) {
                 menu.idleTimeout.value = changes.idleTimeout.newValue;
@@ -48,14 +59,16 @@ class App extends fadr.App {
     static function main() {
         window.onload = function(_){
             chrome.Storage.local.get( {
-                    idleTimeout: 600,
-                    //power: null,
                     brightness: 100,
                     saturation: 100,
                     fadeDuration: 1000,
                     changeInterval: 2000,
+                    //screensaver: false, //TODO
+                    idleTimeout: 600,
+                    powerLevel: null,
                 },
                 function(settings:SettingsData){
+                    trace(settings);
                     var app = new App( settings );
                     Timer.delay( app.init, 1 );
                 }

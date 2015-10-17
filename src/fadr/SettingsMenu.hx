@@ -3,6 +3,7 @@ package fadr;
 import js.Browser.document;
 import js.html.Element;
 import fadr.gui.Slider;
+import fadr.gui.Select;
 
 class SettingsMenu {
 
@@ -13,6 +14,7 @@ class SettingsMenu {
 
     #if chrome
     public var idleTimeout(default,null) : Slider;
+    public var powerLevel(default,null) : Select;
     #end
 
     public var isMouseOver(default,null) = false;
@@ -66,9 +68,20 @@ class SettingsMenu {
 
         var section = document.getElementById( 'settings-screensaver' );
 
-        idleTimeout = new Slider( 'idle-timeout', settings.idleTimeout, 15, 600, 10, ' secs' );
+        //var screensaver = new Select( 'screensaver', ['on','off'], false );
+        //section.appendChild( screensaver.element );
+
+
+        idleTimeout = new Slider( 'idle-timeout', settings.idleTimeout, 15, 3600, 5, ' secs' );
         idleTimeout.onChange = function(v) saveSettings( 'idleTimeout', v );
         section.appendChild( idleTimeout.element );
+
+        powerLevel = new Select( 'keep', ['display','system'], 'awake', false );
+        if( settings.powerLevel != null ) powerLevel.select( settings.powerLevel );
+        powerLevel.onChange = function(id,selected){
+            chrome.Storage.local.set( { powerLevel: selected ? id : null } );
+        }
+        section.appendChild( powerLevel.element );
 
         #end
 

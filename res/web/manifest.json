@@ -10,8 +10,8 @@
         "url":"http://disktree.net"
     },
     "icons":[
-        {"type":"image/png","sizes":"16x16","src":"icon/fadr-16.png"},
-        {"type":"image/png","sizes":"48x48","src":"icon/fadr-48.png"},
-        {"type":"image/png","sizes":"128x128","src":"icon/fadr-128.png"}
+        {"type":"image/png","sizes":"16x16","src":"icon/fadr-desktop-16.png"},
+        {"type":"image/png","sizes":"48x48","src":"icon/fadr-desktop-48.png"},
+        {"type":"image/png","sizes":"128x128","src":"icon/fadr-desktop-128.png"}
     ]
 }

@@ -26,12 +26,16 @@ class Build {
             syncFile( 'res/android/settings.html', '$dst/settings.html' );
         case 'chrome':
             lessc( 'app' );
-            syncDirectory( 'res/chrome/icon', '$dst/icon' );
+            syncFile( 'res/icon/fadr-desktop-16.png', '$dst/icon/fadr-desktop-16.png' );
+            syncFile( 'res/icon/fadr-desktop-48.png', '$dst/icon/fadr-desktop-48.png' );
+            syncFile( 'res/icon/fadr-desktop-128.png', '$dst/icon/fadr-desktop-128.png' );
             syncFile( 'res/chrome/manifest.json', '$dst/manifest.json' );
             syncFile( 'res/chrome/app.html', '$dst/app.html' );
         case 'web':
             lessc( 'app', 'fadr' );
-            syncDirectory( 'res/web/icon', '$dst/icon' );
+            syncFile( 'res/icon/fadr-desktop-16.png', '$dst/icon/fadr-desktop-16.png' );
+            syncFile( 'res/icon/fadr-desktop-48.png', '$dst/icon/fadr-desktop-48.png' );
+            syncFile( 'res/icon/fadr-desktop-128.png', '$dst/icon/fadr-desktop-128.png' );
             syncFile( 'res/web/manifest.json', '$dst/manifest.json' );
             syncFile( 'res/web/index.html', '$dst/index.html' );
             //syncFile( 'res/web/serviceworker.js', '$dst/serviceworker.js' );

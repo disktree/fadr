@@ -11,8 +11,8 @@
     },
     "permissions": ["idle","storage","power","system.display","app.window.alwaysOnTop"],
     "icons": {
-        "16": "icon/chrome-16.png",
-        "48": "icon/chrome-48.png",
-        "128": "icon/chrome-128.png"
+        "16": "icon/fadr-desktop-16.png",
+        "48": "icon/fadr-desktop-48.png",
+        "128": "icon/fadr-desktop-128.png"
     }
 }

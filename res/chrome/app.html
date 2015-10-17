@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <style media="screen">body{background:#000;}</style>
         <link rel="stylesheet" href="app.css">
         <script src="app.js" defer></script>
     </head>
@@ -10,48 +9,29 @@
 
         <div id="fadr"></div>
 
-        <img id="settings-toggle" src="image/settings.png"></img>
+        <header>
+            <img src="image/fadr-title.png"/>
+        </header>
 
         <div id="settings">
+            <section id="settings-fade"></section>
+            <section id="settings-filter"></section>
+            <section id="settings-screensaver"></section>
 
-            <div>
-                <img id="title" src="image/fadr-title.png"/>
-            </div>
-
-            <section class="column">
-                <div class="control" title="Pause between fades in milli-seconds">
-                    <div class="title">COLOR CHANGE INTERVAL</div>
-                    <div id="change-interval-label" class="label"></div>
-                    <input type="range" id="change-interval" class="slider" min="10" max="5000" step="10" tabindex="0"/>
-                </div>
-                <div class="control" title="Duration of a fade from color to color in milli-seconds">
-                    <div class="title">FADE DURATION</div>
-                    <div id="fade-duration-label" class="label"></div>
-                    <input type="range" id="fade-duration" class="slider" min="0" max="5000" step="10" tabindex="0"/>
-                </div>
+            <!--
+            <section id="settings-power">
+                <span>KEEP</span>
+                <span id="power-display" class="power-setting">DISPLAY</span>
+                <span id="power-system" class="power-setting">SYSTEM</span>
+                <span>AWAKE</span>
             </section>
+            -->
 
+            <!--
             <section class="column">
-                <div class="control" title="Screensaver brightness">
-                    <div class="title">BRIGHTNESS</div>
-                    <div id="brightness-label" class="label"></div>
-                    <input type="range" id="brightness" class="slider" min="15" max="200" step="1" tabindex="0"/>
-                </div>
                 <div class="control">
-                    <div class="title">SATURATION</div>
-                    <div id="saturation-label" class="label"></div>
-                    <input type="range" id="saturation" class="slider" min="0" max="200" step="1" tabindex="0"/>
+                    <span>SCREENSAVER ON/OFF</span>
                 </div>
-            </section>
-
-            <section class="column">
-                    <!--
-                <div class="control">
-                    <span>SCREENSAVER</span>
-                    <span id="screensaver-on">ON</span>
-                    <span id="screensaver-off">OFF</span>
-                </div>
-                    -->
                 <div class="control">
                     <div class="title">IDLE TIMEOUT</div>
                     <div id="idle-timeout-label" class="label"></div>
@@ -64,15 +44,14 @@
                     <span>AWAKE</span>
                 </div>
             </section>
+            -->
 
         </div>
 
-        <!--
         <footer>
+            <a href="https://github.com/tong/fadr" title="View source code" target="_blank"><img src="image/github.png"/></a>
             <a href="https://play.google.com/store/apps/details?id=disktree.net.dream.fadr" title="Get fadr for android" target="_blank"><img src="image/android.png"/></a>
-            <a href="https://github.com/tong/100-dreams-1-fadr" title="View source code on github" target="_blank"><img src="image/github.png"/></a>
         </footer>
-        -->
 
     </body>
 </html>

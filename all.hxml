@@ -1,0 +1,3 @@
+-cmd haxe android.hxml
+-cmd haxe chrome.hxml
+-cmd haxe web.hxml

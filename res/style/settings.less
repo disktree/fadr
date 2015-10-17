@@ -1,76 +1,52 @@
 
-@import "../style/base.less";
-@import "../style/fadr.less";
-
-@font-face {
-    src: url('font/Roboto-Light.ttf') format('truetype');
-    font-family: RobotoLight;
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    overflow-x: hidden;
-}
-
 input {
-    //-webkit-appearance: none;
-    //-webkit-tap-highlight-color: none;
-    -webkit-user-select: none;
+    outline: none;
+    .no-select;
 }
-
 input[type=range] {
-   -webkit-appearance: none;
-   -webkit-user-select: none;
-   -webkit-tap-highlight-color: none;
-   width: 90%;
-   align-self: center;
-   cursor: pointer;
-   background: transparent;
+   .no-appearance;
+   .no-select;
+   width: 100%;
    padding: @slider-thumb-size/2 0px 0px 0px;
+   align-self: center;
    outline: none;
+   background: transparent;
 }
 input[type=range]:focus {
 	outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
-	-webkit-appearance: none;
-    -webkit-tap-highlight-color: none;
-    width: 80%;
-    height: 10px;
+	.no-appearance;
+    height: @slider-track-height;
     border-top: 1px solid #fff;
-    //color: rgba(0,0,0,0.0);
-    //background: rgba(0,0,0,0.0);
-}
-input[type=range]::-webkit-slider-runnable-track:hover {
 }
 input[type=range]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-    -webkit-tap-highlight-color: none;
+	.no-appearance;
     background: #fff;
     position: relative;
     width: @slider-thumb-size;
     height: @slider-thumb-size;
     top: -@slider-thumb-size/2;
     border-radius: @slider-thumb-size/2;
-    transition: transform 0.1s;
 }
-input[type=range]::-webkit-slider-thumb:hover {
-    transform: scale(1.3,1.3);
-}
-
-////////////////////////////////////////////////////////////////////////////////
 
 #settings {
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
     display: table;
-    text-transform: uppercase;
-    color: #fff;
-    mix-blend-mode: difference;
-    -webkit-mix-blend-mode: difference;
+    position: fixed;
+    top: @settings-indent;
+    left: @settings-indent;
+    right: @settings-indent;
+    bottom: @settings-indent;
     z-index: 1000;
-    cursor: default;
-    -webkit-user-select: none;
+    text-transform: uppercase;
+    .blend-mode;
+    .no-select;
+    width: 100%;
+}
+#settings section {
+    width: @settings-section-width;
+}
+#settings .title {
+    float: left;
+    margin-right: 5px;
 }

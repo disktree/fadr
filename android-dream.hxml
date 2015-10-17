@@ -4,7 +4,6 @@
 -cp ../../../../lib/om/src
 -dce full
 -D android
+-D mobile
 -D analyzer
-#-debug
-
--cmd lessc res/android/dream.less build/android/dream.css
+-debug

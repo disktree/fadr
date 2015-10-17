@@ -1,11 +1,23 @@
 
-@import "../style/base.less";
-@import "../style/fadr.less";
+/* FADR-ANDROID-DREM */
 
-body {
-    font-family: RobotoLight;
-    font-size: 14px;
-    background: #000;
-    overflow: hidden;
-    background: #000;
+@charset "UTF-8";
+
+@font-size: 16px;
+
+@import "../style/mixins.less";
+@import "../style/base.less";
+
+header {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    .blend-mode;
+    .no-select;
+    pointer-events: none;
 }
+header img {
+    max-width: 150px;
+}
+
+@import "../style/fadr.less";

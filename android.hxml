@@ -1,10 +1,10 @@
 -cmd haxe android-dream.hxml
 -cmd haxe android-settings.hxml
 
---next
 -cp src
 -cp ../../lib/om/src
--D android
---macro fadr.android.Build.app()
+-D platform=android
+--macro fadr.macro.Build.app()
 
--cmd cp -r build/android/* ~/dev/android/fadr/assets
+-cmd mkdir -p data/fadr-android/assets
+-cmd cp -r build/android/* data/fadr-android/assets

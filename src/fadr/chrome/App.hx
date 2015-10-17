@@ -2,147 +2,62 @@ package fadr.chrome;
 
 import js.Browser.document;
 import js.Browser.window;
-import js.html.Element;
 import haxe.Timer;
-import chrome.Storage;
-import chrome.Power;
-import chrome.Idle;
-import fadr.view.FadrView;
 
-class App {
+class App extends fadr.App {
 
-    static inline var MOUSE_HIDE_TIMEOUT = 2500;
+    override function init() {
 
-    static var view : FadrView;
-    static var menu : SettingsMenu;
-    static var toggleMenuButton : Element;
-    static var isMouseOverToggleButton = false;
-    static var timer : Timer;
+        super.init();
 
-    static function close() {
+        chrome.Storage.onChanged.addListener(function(changes,namespace){
+            if( changes.changeInterval != null ) {
+                view.changeInterval = menu.changeInterval.value = changes.changeInterval.newValue;
+            }
+            if( changes.fadeDuration != null ) {
+                view.fadeDuration = menu.fadeDuration.value = changes.fadeDuration.newValue;
+            }
+            if( changes.brightness != null ) {
+                view.brightness = menu.brightness.value = changes.brightness.newValue;
+            }
+            if( changes.saturation != null ) {
+                view.saturation = menu.saturation.value = changes.saturation.newValue;
+            }
+            if( changes.idleTimeout != null ) {
+                menu.idleTimeout.value = changes.idleTimeout.newValue;
+                chrome.Idle.setDetectionInterval( changes.idleTimeout.newValue );
+            }
+        });
+    }
+
+    function close() {
         chrome.Runtime.getBackgroundPage(function(win:js.html.Window){
             untyped win.Fadr.stopScreensaver();
         });
     }
 
-    static function handleMouseMove(e) {
-
-        document.body.style.cursor = 'default';
-        toggleMenuButton.style.opacity = '1';
-
-        timer.stop();
-        timer = new Timer( MOUSE_HIDE_TIMEOUT );
-        timer.run = function() {
-            timer.stop();
-            if( !menu.isMouseOver && !isMouseOverToggleButton ) {
-                document.body.style.cursor = 'none';
-                menu.hide();
-                toggleMenuButton.style.opacity = '0';
-            }
-        }
+    override function handleDoubleClickBody(e) {
+        close();
     }
 
-    static function handleToggleMenuClick(e) {
-        menu.toggle();
+    override function handleContextMenu(e) {
+        super.handleContextMenu(e);
+        #if !debug close(); #end
     }
 
     static function main() {
-
-        window.onload = function(_) {
-
-            Storage.local.get( {
-                    idleTimeout: 300,
-                    power: null,
+        window.onload = function(_){
+            chrome.Storage.local.get( {
+                    idleTimeout: 600,
+                    //power: null,
                     brightness: 100,
                     saturation: 100,
                     fadeDuration: 1000,
                     changeInterval: 2000,
                 },
-                function(data:SettingsData){
-
-                    var palettes = fadr.macro.BuildColorPalettes.fromSources(100000);
-                    view = new FadrView( palettes, data );
-                    view.start();
-
-                    menu = new SettingsMenu( data );
-                    menu.onIdleTimeoutChange = function(v){
-                        Storage.local.set( { idleTimeout: v } );
-                        Idle.setDetectionInterval( v );
-                    }
-                    menu.onPowerLevelChange = function(level){
-                        if( level == null ) {
-                            Power.releaseKeepAwake();
-                        } else {
-                            Power.requestKeepAwake( level );
-                        }
-                        Storage.local.set( { power:level } );
-                    }
-                    menu.onFadeDurationChange = function(v){
-                        Storage.local.set( { fadeDuration: v } );
-                    }
-                    menu.onChangeIntervalChange = function(v){
-                        Storage.local.set( { changeInterval: v } );
-                    }
-                    menu.onBrightnessInput = function(v){
-                        view.setBrightness( v );
-                    }
-                    menu.onBrightnessChange = function(v){
-                        Storage.local.set( { brightness: v } );
-                    }
-                    menu.onSaturationInput = function(v){
-                        view.setSaturation(v);
-                    }
-                    menu.onSaturationChange = function(v){
-                        Storage.local.set( { saturation: v } );
-                    }
-
-                    Storage.onChanged.addListener(function(changes,namespace){
-                        //trace(changes);
-                        if( changes.idleTimeout != null ) {
-                            menu.setIdleTimeout( changes.idleTimeout.newValue );
-                        }
-                        if( changes.brightness != null ) {
-                            view.setBrightness( changes.brightness.newValue );
-                            menu.setBrightness( changes.brightness.newValue );
-                        }
-                        if( changes.saturation != null ) {
-                            view.setSaturation( changes.saturation.newValue );
-                            menu.setSaturation( changes.saturation.newValue );
-                        }
-                        if( changes.fadeDuration != null ) {
-                            view.setFadeDuration( changes.fadeDuration.newValue );
-                            menu.setFadeDuration( changes.fadeDuration.newValue );
-                        }
-                        if( changes.changeInterval != null ) {
-                            view.setChangeInterval( changes.changeInterval.newValue );
-                            menu.setChangeInterval( changes.changeInterval.newValue );
-                        }
-                        if( changes.power != null ) {
-                            menu.setPowerLevel( changes.power.newValue );
-                        }
-                    });
-
-                    timer = new Timer( MOUSE_HIDE_TIMEOUT );
-
-                    document.body.addEventListener( 'contextmenu', function(e){
-                        #if !debug
-                        e.preventDefault();
-                        close();
-                        #end
-                    }, false );
-
-                    document.body.addEventListener( 'mousemove', handleMouseMove, false );
-
-                    view.dom.addEventListener( 'click', function(_){
-                        close();
-                    }, false );
-
-                    toggleMenuButton = document.getElementById( 'settings-toggle' );
-                    toggleMenuButton.addEventListener( 'click', function(e){
-                        menu.toggle();
-                    }, false );
-                    toggleMenuButton.onmouseover = function(_) isMouseOverToggleButton = true;
-                    toggleMenuButton.onmouseout = function(_) isMouseOverToggleButton = false;
+                function(settings:SettingsData){
+                    var app = new App( settings );
+                    Timer.delay( app.init, 1 );
                 }
             );
         }

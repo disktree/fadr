@@ -46,40 +46,41 @@ class Background {
 
     static function main() {
 
-        // Store into window object to provide access from app
         untyped js.Browser.window.Fadr = Background;
 
         Runtime.onLaunched.addListener( function(?e) {
             startScreensaver();
         });
 
-        Idle.onStateChanged.addListener(function(state){
-            switch state {
-            case active:
-            case locked:
-                stopScreensaver();
-            case idle:
-                startScreensaver();
-            }
-        });
-
         Storage.local.get( {
-                idleTimeout: 300,
-                power: null,
+                //screensaver: false, //TODO
+                idleTimeout: 600,
+                //power: null, //TODO
                 fadeDuration: 1000,
                 changeInterval: 1000,
                 brightness: 100,
                 saturation: 100,
             },
-            function(data:SettingsData){
+            function(settings:SettingsData){
 
-                Idle.setDetectionInterval( data.idleTimeout );
+                Idle.setDetectionInterval( settings.idleTimeout );
 
+                Idle.onStateChanged.addListener(function(state){
+                    switch state {
+                    case active: //TODO ?
+                    case locked: stopScreensaver();
+                    case idle: startScreensaver();
+                    }
+                });
+
+
+                /*
                 if( data.power == null ) {
                     Power.releaseKeepAwake();
                 } else {
                     Power.requestKeepAwake( data.power );
                 }
+                */
 
                 /*
                 Window.onBoundsChanged.addListener(function(){
@@ -88,5 +89,6 @@ class Background {
                 */
             }
         );
+
     }
 }

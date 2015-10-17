@@ -1,10 +1,48 @@
 
-/* android.fadr.settings */
+/* FADR-ANDROID-SETTINGS */
 
+@charset "UTF-8";
+
+@font-size: 16px;
+@settings-indent: 30px;
+@settings-section-width: 90%; //TODO hmmm
+@slider-track-height : 20px;
+@slider-thumb-size : 32px;
+
+@import "../style/mixins.less";
 @import "../style/base.less";
 @import "../style/fadr.less";
-
-@max-width: 600px;
-@slider-thumb-size : 24px;
-
 @import "../style/settings.less";
+@import "../style/mobile.less";
+
+/*
+header {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    .blend-mode;
+    .no-select;
+    pointer-events: none;
+}
+header img {
+    max-width: 150px;
+}
+*/
+
+/*
+#settings {
+    width: 90%;
+    top: @settings-indent;
+    left: @settings-indent;
+    right: @settings-indent;
+    bottom: @settings-indent;
+}
+#settings section {
+    //width: @settings-section-width;
+}
+*/
+
+#settings div.slider {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}

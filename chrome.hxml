@@ -1,7 +1,7 @@
 -cmd haxe chrome-background.hxml
 -cmd haxe chrome-app.hxml
 
---next
 -cp src
 -cp ../../lib/om/src
---macro fadr.chrome.Build.app()
+-D platform=chrome
+--macro fadr.macro.Build.app()

@@ -4,3 +4,6 @@ _*
 data/fadr-android/assets/
 data/fadr-android/bin/
 data/fadr-android/gen/
+data/fadr-android/*.keystore
+data/fadr-android/local.properties
+data/fadr-android/NOTES.md

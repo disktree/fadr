@@ -1,3 +1,6 @@
 build/
 TODO.md
 _*
+data/fadr-android/assets/
+data/fadr-android/bin/
+data/fadr-android/gen/

@@ -8,9 +8,11 @@ typedef SettingsData = {
     var brightness : Int;
     var saturation : Int;
 
+    /*
     #if chrome
     //var screensaver : Bool;
     var powerLevel : chrome.Power.Level;
     var idleTimeout : Int;
     #end
+    */
 }

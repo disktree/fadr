@@ -63,7 +63,7 @@ class SettingsMenu {
         saturation.onChange = function(v) saveSettings( 'saturation', v );
         section.appendChild( saturation.element );
 
-
+        /*
         #if chrome ///// Section Screensaver
 
         var section = document.getElementById( 'settings-screensaver' );
@@ -84,6 +84,7 @@ class SettingsMenu {
         section.appendChild( powerLevel.element );
 
         #end
+        */
 
         #if !mobile
         element.onmouseover = function(_) isMouseOver = true;
@@ -104,7 +105,6 @@ class SettingsMenu {
     #if chrome
 
     function saveSettings<T>( field : String, value : T ) {
-        //trace("save "+field+":"+value);
         var obj : SettingsData = cast {};
         Reflect.setField( obj, field, value );
         chrome.Storage.local.set( obj );

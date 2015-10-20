@@ -52,6 +52,7 @@ class Background {
             startScreensaver();
         });
 
+        /*
         Storage.local.get( {
                 fadeDuration: 1000,
                 changeInterval: 1000,
@@ -63,8 +64,8 @@ class Background {
             },
             function(settings:SettingsData){
 
+                /*
                 Idle.setDetectionInterval( settings.idleTimeout );
-
                 Idle.onStateChanged.addListener(function(state){
                     switch state {
                     case active: //TODO ?
@@ -72,7 +73,7 @@ class Background {
                     case idle: startScreensaver();
                     }
                 });
-
+                * /
 
                 /*
                 if( data.power == null ) {
@@ -86,9 +87,10 @@ class Background {
                 Window.onBoundsChanged.addListener(function(){
                     //stopScreensaver();
                 });
-                */
+                * /
             }
         );
+        */
 
     }
 }

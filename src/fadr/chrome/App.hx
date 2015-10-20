@@ -25,6 +25,7 @@ class App extends fadr.App {
                 view.saturation = menu.saturation.value = changes.saturation.newValue;
             }
 
+            /*
             if( changes.powerLevel != null ) {
                 if( changes.powerLevel.newValue == null ) {
                     menu.powerLevel.unselect( changes.powerLevel.oldValue );
@@ -38,6 +39,7 @@ class App extends fadr.App {
                 menu.idleTimeout.value = changes.idleTimeout.newValue;
                 chrome.Idle.setDetectionInterval( changes.idleTimeout.newValue );
             }
+            */
         });
     }
 

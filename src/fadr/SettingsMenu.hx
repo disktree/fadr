@@ -28,6 +28,9 @@ class SettingsMenu {
         this.view = view;
 
         element = document.getElementById( 'settings' );
+        element.addEventListener( 'transitionend', function(e){
+            element.style.display = (element.style.opacity == '0') ? 'none' : 'inline-block';
+        } );
 
         ///// Section Fade
 
@@ -41,6 +44,7 @@ class SettingsMenu {
         section.appendChild( fadeDuration.element );
         changeInterval = new Slider( 'change-interval', settings.changeInterval, 0, 10000, 100, ' ms' );
         changeInterval.onChange = function(v) {
+            if( v == 0 ) v = 1;
             view.changeInterval = v;
             saveSettings( 'changeInterval', v );
         }

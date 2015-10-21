@@ -25,7 +25,6 @@ class App extends fadr.App {
                 view.saturation = menu.saturation.value = changes.saturation.newValue;
             }
 
-            /*
             if( changes.powerLevel != null ) {
                 if( changes.powerLevel.newValue == null ) {
                     menu.powerLevel.unselect( changes.powerLevel.oldValue );
@@ -35,6 +34,7 @@ class App extends fadr.App {
                     chrome.Power.requestKeepAwake( changes.powerLevel.newValue );
                 }
             }
+            /*
             if( changes.idleTimeout != null ) {
                 menu.idleTimeout.value = changes.idleTimeout.newValue;
                 chrome.Idle.setDetectionInterval( changes.idleTimeout.newValue );
@@ -66,11 +66,10 @@ class App extends fadr.App {
                     fadeDuration: 1000,
                     changeInterval: 2000,
                     //screensaver: false, //TODO
-                    idleTimeout: 600,
+                    //idleTimeout: 600,
                     powerLevel: null,
                 },
                 function(settings:SettingsData){
-                    trace(settings);
                     var app = new App( settings );
                     Timer.delay( app.init, 1 );
                 }

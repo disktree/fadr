@@ -12,12 +12,10 @@ class SettingsMenu {
     public var brightness(default,null) : Slider;
     public var saturation(default,null) : Slider;
 
-    /*
     #if chrome
-    public var idleTimeout(default,null) : Slider;
     public var powerLevel(default,null) : Select;
+    //public var idleTimeout(default,null) : Slider;
     #end
-    */
 
     //public var isMouseOver(default,null) = false;
     public var isVisible(default,null) = false;
@@ -31,12 +29,12 @@ class SettingsMenu {
 
         element = document.getElementById( 'settings' );
 
-
         ///// Section Fade
 
         var section = document.getElementById( 'settings-fade' );
         fadeDuration = new Slider( 'fade-duration', settings.fadeDuration, 0, 10000, 100, ' ms' );
         fadeDuration.onChange = function(v) {
+            if( v == 0 ) v = 1;
             view.fadeDuration = v;
             saveSettings( 'fadeDuration', v );
         }
@@ -47,7 +45,6 @@ class SettingsMenu {
             saveSettings( 'changeInterval', v );
         }
         section.appendChild( changeInterval.element );
-
 
         ///// Section Filter
 
@@ -65,18 +62,19 @@ class SettingsMenu {
         saturation.onChange = function(v) saveSettings( 'saturation', v );
         section.appendChild( saturation.element );
 
-        /*
+
         #if chrome ///// Section Screensaver
 
-        var section = document.getElementById( 'settings-screensaver' );
+        var section = document.getElementById( 'settings-power' );
 
         //var screensaver = new Select( 'screensaver', ['on','off'], false );
         //section.appendChild( screensaver.element );
 
-
+        /*
         idleTimeout = new Slider( 'idle-timeout', settings.idleTimeout, 15, 3600, 5, ' secs' );
         idleTimeout.onChange = function(v) saveSettings( 'idleTimeout', v );
         section.appendChild( idleTimeout.element );
+        */
 
         powerLevel = new Select( 'keep', ['display','system'], 'awake', false );
         if( settings.powerLevel != null ) powerLevel.select( settings.powerLevel );
@@ -86,7 +84,6 @@ class SettingsMenu {
         section.appendChild( powerLevel.element );
 
         #end
-        */
 
         /*
         #if !mobile

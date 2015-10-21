@@ -52,14 +52,14 @@ class Background {
             startScreensaver();
         });
 
-        /*
+
         Storage.local.get( {
                 fadeDuration: 1000,
                 changeInterval: 1000,
                 brightness: 100,
                 saturation: 100,
                 //screensaver: false, //TODO
-                idleTimeout: 600,
+                //idleTimeout: 600,
                 powerLevel: null,
             },
             function(settings:SettingsData){
@@ -87,10 +87,8 @@ class Background {
                 Window.onBoundsChanged.addListener(function(){
                     //stopScreensaver();
                 });
-                * /
+                */
             }
         );
-        */
-
     }
 }

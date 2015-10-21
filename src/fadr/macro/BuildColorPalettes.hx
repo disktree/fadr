@@ -21,6 +21,9 @@ class BuildColorPalettes {
             for( color in colors ) {
                 if( color.length == 0 )
                     continue;
+                color = color.toLowerCase();
+                if( color == '#ffffff' )
+                    continue;
                 if( !colorExpr.match( color ) ) {
                     Context.warning( 'Invalid color value: '+color+' [$f]', Context.currentPos() );
                     continue;

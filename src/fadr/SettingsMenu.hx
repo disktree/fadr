@@ -12,12 +12,14 @@ class SettingsMenu {
     public var brightness(default,null) : Slider;
     public var saturation(default,null) : Slider;
 
+    /*
     #if chrome
     public var idleTimeout(default,null) : Slider;
     public var powerLevel(default,null) : Select;
     #end
+    */
 
-    public var isMouseOver(default,null) = false;
+    //public var isMouseOver(default,null) = false;
     public var isVisible(default,null) = false;
 
     var element : Element;
@@ -86,10 +88,12 @@ class SettingsMenu {
         #end
         */
 
+        /*
         #if !mobile
         element.onmouseover = function(_) isMouseOver = true;
         element.onmouseout = function(_) isMouseOver = false;
         #end
+        */
     }
 
     public function show() {
@@ -100,6 +104,11 @@ class SettingsMenu {
     public function hide() {
         element.style.opacity = '0';
         isVisible = false;
+    }
+
+    public function toggle() : Bool {
+        isVisible ? hide() : show();
+        return isVisible;
     }
 
     #if chrome

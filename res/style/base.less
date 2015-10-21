@@ -1,4 +1,6 @@
 
+/* --- FADR-BASE --- */
+
 @font-face {
     src: url('font/Roboto-Light.ttf') format('truetype');
     font-family: RobotoLight;
@@ -20,7 +22,36 @@ body {
     font-family: RobotoLight;
     font-size: @font-size;
     font-weight: 400;
-    //-webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     //line-height: 20px;
     background: #000;
+}
+
+#fadr {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transform: translate3d(0,0,0);
+    .no-select;
+    z-index: 0;
+}
+
+#gui {
+    .blend-mode;
+    .no-select;
+    z-index: 1000;
+}
+
+.slider .title {
+    float: left;
+    margin-right: 5px;
+}
+
+#settings {
+    //position: fixed;
+    transition: opacity 0.2s;
 }

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg6873"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fadr-desktop-icons.svg">
+  <defs
+     id="defs6875">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.46404041,1.8656422e-8,0,0.27421941,-174.32137,256.50405)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4338-0-7"
+       inkscape:collect="always">
+      <stop
+         id="stop5958"
+         offset="0"
+         style="stop-color:#df0002;stop-opacity:1" />
+      <stop
+         id="stop5960"
+         offset="1"
+         style="stop-color:#0008ff;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9-5"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.16233746,0,0,0.09593148,291.8993,291.63088)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9-5-7"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.05947738,0,0,0.03514748,426.49915,324.77567)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.4524772"
+     inkscape:cx="190.28012"
+     inkscape:cy="548.8155"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1059"
+     inkscape:window-x="1680"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4162" />
+    <sodipodi:guide
+       position="100,500.00001"
+       orientation="1,0"
+       id="guide4164" />
+    <sodipodi:guide
+       position="100,500.00001"
+       orientation="0,1"
+       id="guide4166" />
+    <sodipodi:guide
+       position="250,500.00001"
+       orientation="1,0"
+       id="guide4203" />
+    <sodipodi:guide
+       position="320,500.00001"
+       orientation="1,0"
+       id="guide4205" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata6878">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-2-0"
+       width="48"
+       height="48"
+       x="250"
+       y="504.36221"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-48.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="259.38965"
+       y="571.63953"
+       id="text4537-1-1-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539-4-5-5"
+         x="259.38965"
+         y="571.63953">48</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="328.62671"
+       y="571.63953"
+       id="text4537-1-1-9-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539-4-5-5-8"
+         x="328.62671"
+         y="571.63953">16</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="108.62671"
+       y="571.63953"
+       id="text4537-1-1-9-2-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539-4-5-5-8-7"
+         x="108.62671"
+         y="571.63953">128</tspan></text>
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-2"
+       width="128"
+       height="128"
+       x="100"
+       y="424.36221"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-128.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4178"
+       transform="matrix(0.91666666,0,0,0.91666666,-6.8750266,63.19636)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-128.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
+         y="445.18964"
+         x="142.67694"
+         height="65.957123"
+         width="89.236107"
+         id="rect4136-0-0"
+         style="opacity:1;fill:url(#radialGradient5954-9);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-128.png"
+         id="path3589"
+         d="m 227.50003,512.72638 c 5.5,0 9.95,-4.5 9.95,-10 l 0.05,-50 c 0,-5.5 -4.5,-10 -10,-10 l -80,0 c -5.5,0 -10,4.5 -10,10 l 0,50 c 0,5.5 4.5,10 10,10 l -20,0 0,10 120,0 0,-10 -20,0 z m -80,-60 80,0 0,50 -80,0 0,-50 z"
+         inkscape:connector-curvature="0"
+         style="fill:#202020;fill-opacity:1" />
+    </g>
+    <g
+       id="g4184"
+       transform="translate(-144.8257,160.95214)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-48.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-48.png"
+         y="357.63965"
+         x="402.79633"
+         height="23.074093"
+         width="31.21789"
+         id="rect4136-0-0-8"
+         style="opacity:1;fill:url(#radialGradient5954-9-5);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-48.png"
+         id="path3589-3"
+         d="m 433.4924,381.74339 c 2.01666,0 3.64833,-1.65 3.64833,-3.66667 l 0.0183,-18.33333 c 0,-2.01667 -1.65,-3.66667 -3.66666,-3.66667 l -29.33334,0 c -2.01666,0 -3.66666,1.65 -3.66666,3.66667 l 0,18.33333 c 0,2.01667 1.65,3.66667 3.66666,3.66667 l -7.33333,0 0,3.66667 44,0 0,-3.66667 -7.33333,0 z m -29.33334,-22 29.33334,0 0,18.33333 -29.33334,0 0,-18.33333 z"
+         inkscape:connector-curvature="0"
+         style="fill:#202020;fill-opacity:1" />
+    </g>
+    <rect
+       style="display:inline;opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-2-0-6"
+       width="16"
+       height="16"
+       x="320"
+       y="536.36218"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4207"
+       transform="matrix(0.875,0,0,0.875,-85.777805,236.17007)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-16.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-16.png"
+         y="348.96005"
+         x="467.12973"
+         height="8.4539127"
+         width="11.437646"
+         id="rect4136-0-0-8-5"
+         style="opacity:1;fill:url(#radialGradient5954-9-5-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/tong/dev/project/fadr/res/chrome/icon/chrome-16.png"
+         id="path3589-3-6"
+         d="m 478.22192,357.74339 c 0.73334,0 1.32667,-0.6 1.32667,-1.33333 l 0.007,-6.66667 c 0,-0.73333 -0.6,-1.33333 -1.33334,-1.33333 l -10.66666,0 c -0.73334,0 -1.33334,0.6 -1.33334,1.33333 l 0,6.66667 c 0,0.73333 0.6,1.33333 1.33334,1.33333 l -2.66667,0 0,1.33333 16,0 0,-1.33333 -2.66667,0 z m -10.66666,-8 10.66666,0 0,6.66667 -10.66666,0 0,-6.66667 z"
+         inkscape:connector-curvature="0"
+         style="fill:#202020;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

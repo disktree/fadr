@@ -1,33 +1,73 @@
 
-/* FADR-CHROME */
+/* --- FADR-chrome --- */
 
 @charset "UTF-8";
 
 @font-size: 14px;
-@settings-top: 130px;
-@settings-left: 30px;
+
+//@settings-top: 130px;
+//@settings-left: 30px;
 @settings-section-width: 200px;
 @slider-track-height : 10px;
 @slider-thumb-size : 14px;
 
 @import "../style/mixins.less";
 @import "../style/base.less";
-@import "../style/fadr.less";
 @import "../style/settings.less";
-@import "../style/desktop.less";
+
+#settings-toggle {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+#settings {
+    top: 70px;
+    left: 90px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+#settings #title {
+    display: block;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+#settings section {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+input[type=range] {
+   cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+    transition: transform 0.1s;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.3,1.3);
+}
+
+.slider {
+    margin-bottom: 16px;
+}
+
 
 footer {
     position: fixed;
     bottom: 10px;
     right: 12px;
-    margin: 0;
-    padding: 0;
-    z-index: 1000;
-    .no-select;
-    .blend-mode;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 footer img {
-    //pointer-events: none;
     width: 24px;
     height: 24px;
     margin-right: 5px;

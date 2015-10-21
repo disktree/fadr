@@ -1,4 +1,6 @@
 
+/* --- FADR-SETTINGS --- */
+
 input {
     outline: none;
     .no-select;
@@ -30,7 +32,15 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: @slider-thumb-size/2;
 }
 
+#settings {
+    position: fixed;
+    text-transform: uppercase;
+    cursor: default;
+    .no-select;
+}
 
+
+/*
 div.select {
     margin-bottom: 10px;
 }
@@ -50,24 +60,4 @@ div.select span.option:not(:nth-child(2)):before {
 div.select span:last-child {
     margin-left: 5px;
 }
-
-#settings {
-    display: table;
-    position: fixed;
-    top: @settings-top;
-    left: @settings-left;
-    //right: @settings-indent;
-    //bottom: @settings-indent;
-    z-index: 1000;
-    text-transform: uppercase;
-    .blend-mode;
-    .no-select;
-    width: 100%;
-}
-#settings section {
-    width: @settings-section-width;
-}
-#settings .title {
-    float: left;
-    margin-right: 5px;
-}
+*/

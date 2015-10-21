@@ -12,7 +12,7 @@ class App {
     var view : fadr.View;
 
     #if !mobile
-    var title : Element;
+    var menuToggle : Element;
     var footer : Element;
     var timer : Timer;
     #end
@@ -23,9 +23,8 @@ class App {
         menu = new SettingsMenu( view, settings );
 
         #if !mobile
-        title = document.getElementsByTagName( 'header' )[0];
         footer = document.getElementsByTagName( 'footer' )[0];
-        hideGUI();
+        menuToggle = document.getElementById( 'settings-toggle' );
         #end
     }
 
@@ -34,22 +33,15 @@ class App {
         view.start();
 
         #if !mobile
+        menuToggle.addEventListener( 'click', handleSettingsToggleClick, false );
         document.body.addEventListener( 'dblclick', handleDoubleClickBody, false );
         document.body.addEventListener( 'contextmenu', handleContextMenu, false );
         document.body.addEventListener( 'mousemove', handleMouseMove, false );
         timer = new Timer( MOUSE_HIDE_TIMEOUT );
-        timer.run = handleTimeout;
         #end
     }
 
     #if !mobile
-
-    function hideGUI() {
-        title.style.opacity = footer.style.opacity = '0';
-        menu.hide();
-        document.body.style.cursor = 'none';
-        //toggleMenuButton.style.opacity = '0';
-    }
 
     function handleDoubleClickBody(e) {}
 
@@ -57,11 +49,18 @@ class App {
         #if !debug e.preventDefault(); #end
     }
 
+    function handleSettingsToggleClick(e) {
+        e.preventDefault();
+        if( menu.toggle() )
+            footer.style.opacity = '1';
+        else
+            footer.style.opacity = '0';
+    }
+
     function handleMouseMove(e) {
 
-        title.style.opacity = footer.style.opacity = '1';
-        menu.show();
         document.body.style.cursor = 'default';
+        menuToggle.style.opacity = '1';
 
         timer.stop();
         timer = new Timer( MOUSE_HIDE_TIMEOUT );
@@ -70,10 +69,11 @@ class App {
 
     function handleTimeout() {
         timer.stop();
-        if( !menu.isMouseOver ) { //&& !isMouseOverToggleButton ) {
-            hideGUI();
+        if( !menu.isVisible ) {
+            document.body.style.cursor = 'none';
+            menuToggle.style.opacity = '0';
+            footer.style.opacity = '0';
         }
-
     }
 
     #end

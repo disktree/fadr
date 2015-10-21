@@ -1,49 +1,43 @@
 
-/* FADR-ANDROID-SETTINGS */
+/* --- FADR-ANDROID-SETTINGS --- */
 
 @charset "UTF-8";
 
-@font-size: 16px;
-@settings-top: 30px;
-@settings-left: 30px;
-@settings-section-width: 90%; //TODO hmmm
+@font-size: 18px;
+
+@settings-section-width: 200px;
 @slider-track-height : 20px;
-@slider-thumb-size : 32px;
+@slider-thumb-size : 30px;
 
 @import "../style/mixins.less";
 @import "../style/base.less";
-@import "../style/fadr.less";
 @import "../style/settings.less";
-@import "../style/mobile.less";
 
-/*
-header {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    .blend-mode;
-    .no-select;
-    pointer-events: none;
-}
-header img {
-    max-width: 150px;
-}
-*/
-
-/*
 #settings {
     width: 90%;
-    top: @settings-indent;
-    left: @settings-indent;
-    right: @settings-indent;
-    bottom: @settings-indent;
+    max-width: 400px;
+    margin: 20px;
+    //top: 30px;
+    //left: 20px;
+    //right: 60px;
 }
-#settings section {
-    //width: @settings-section-width;
-}
-*/
 
-#settings div.slider {
-    margin-right: 30px;
-    margin-bottom: 30px;
+#settings #title {
+    display: block;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+#settings section {
+    //width: 100%;
+    margin-right: 20px;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+.slider .title {
+    float: left;
+    margin-right: 5px;
 }

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fadr-android-icons.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4338-0-7"
+       inkscape:collect="always">
+      <stop
+         id="stop5958"
+         offset="0"
+         style="stop-color:#df0002;stop-opacity:1" />
+      <stop
+         id="stop5960"
+         offset="1"
+         style="stop-color:#0008ff;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9-4"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.46404041,1.8656422e-8,0,0.27421941,-530.1475,219.78467)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9-4-7"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.32141537,1.2922281e-8,0,0.18993676,-397.19175,143.56509)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9-4-7-7"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.25223985,1.0141128e-8,0,0.14905827,-331.79381,74.374902)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4338-0-7"
+       id="radialGradient5954-9-4-7-7-4"
+       cx="779.27777"
+       cy="808.34595"
+       fx="779.27777"
+       fy="808.34595"
+       r="220"
+       gradientTransform="matrix(0.16486026,0,0,0.09742229,-252.34724,45.371069)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.9323922"
+     inkscape:cx="261.64778"
+     inkscape:cy="843.52339"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-nodes="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1"
+     inkscape:bbox-paths="false"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4282" />
+    <sodipodi:guide
+       position="100,950.00002"
+       orientation="1,0"
+       id="guide4389" />
+    <sodipodi:guide
+       position="100,950.00002"
+       orientation="0,1"
+       id="guide4391" />
+    <sodipodi:guide
+       position="148,950.00002"
+       orientation="1,0"
+       id="guide4393" />
+    <sodipodi:guide
+       position="160,950.00002"
+       orientation="1,0"
+       id="guide4395" />
+    <sodipodi:guide
+       position="232,950.00002"
+       orientation="1,0"
+       id="guide4397" />
+    <sodipodi:guide
+       position="250,820.00002"
+       orientation="1,0"
+       id="guide4399" />
+    <sodipodi:guide
+       position="346,950.00002"
+       orientation="1,0"
+       id="guide4401" />
+    <sodipodi:guide
+       position="370,950.00002"
+       orientation="1,0"
+       id="guide4403" />
+    <sodipodi:guide
+       position="514,950.00002"
+       orientation="1,0"
+       id="guide4405" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="helper-icon-bg"
+     style="display:none">
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303"
+       width="48"
+       height="48"
+       x="100"
+       y="102.36221" />
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7"
+       width="72"
+       height="72"
+       x="160"
+       y="102.36221" />
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1"
+       width="96"
+       height="96"
+       x="250"
+       y="102.36221" />
+    <rect
+       style="opacity:1;fill:#0d47a1;fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4303-7-1-5"
+       width="144"
+       height="144"
+       x="370"
+       y="102.36221" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="helper-icon-size-labels"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="368.22522"
+       y="81.540771"
+       id="text4537"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539"
+         x="368.22522"
+         y="81.540771">144</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="249.354"
+       y="81.540771"
+       id="text4537-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539-1"
+         x="249.354"
+         y="81.540771">96</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="160.01105"
+       y="81.460938"
+       id="text4537-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539-4"
+         x="160.01105"
+         y="81.460938">72</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="99.353981"
+       y="81.544449"
+       id="text4537-1-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4539-4-5"
+         x="99.353981"
+         y="81.544449">48</tspan></text>
+    <rect
+       style="opacity:1;fill:url(#radialGradient5954-9-4);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-7"
+       width="89.236107"
+       height="65.957123"
+       x="-213.14919"
+       y="408.47028"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-7-5"
+       width="61.808964"
+       height="45.684887"
+       x="-177.62439"
+       y="274.25726"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-7-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-7-5-5"
+       width="48.506344"
+       height="35.852516"
+       x="-159.48209"
+       y="176.9393"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-hdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-7-7-4);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-7-5-5-1"
+       width="31.703033"
+       height="23.432676"
+       x="-139.72682"
+       y="112.40565"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-mdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     inkscape:label="icons"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="fill:#000000"
+       id="g3458-5"
+       transform="matrix(2,0,0,2,100,102.2316)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-mdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path3448-1"
+         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3450-2"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+    </g>
+    <g
+       style="fill:#000000"
+       id="g3458-5-8"
+       transform="matrix(3,0,0,3,160,102.3622)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-hdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path3448-1-1"
+         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3450-2-7"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+    </g>
+    <g
+       style="fill:#000000"
+       id="g3458-5-8-8"
+       transform="matrix(4,0,0,4,250,102.3622)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path3448-1-1-2"
+         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3450-2-7-3"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+    </g>
+    <g
+       style="fill:#000000"
+       id="g3458-5-8-8-4"
+       transform="matrix(6,0,0,6,370,102.3622)"
+       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         id="path3448-1-1-2-0"
+         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3450-2-7-3-3"
+         d="M 0,0 24,0 24,24 0,24 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+    </g>
+  </g>
+</svg>

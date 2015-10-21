@@ -1,11 +1,12 @@
 -js build/web/fadr.js
 -main fadr.web.App
 -cp src
--cp ../../lib/om/src
 -dce full
+-D platform=web
 -D web
 -D analyzer
 -debug
 #--no-traces
--D platform=web
+
+-cp ../../lib/om/src
 --macro fadr.macro.Build.app()

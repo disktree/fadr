@@ -5,4 +5,4 @@
 -dce full
 -D analyzer
 #-debug
-#--no-traces
+--no-traces

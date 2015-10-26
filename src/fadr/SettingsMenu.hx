@@ -28,9 +28,11 @@ class SettingsMenu {
         this.view = view;
 
         element = document.getElementById( 'settings' );
+        /*
         element.addEventListener( 'transitionend', function(e){
             element.style.display = (element.style.opacity == '0') ? 'none' : 'inline-block';
         } );
+        */
 
         ///// Section Fade
 
@@ -98,12 +100,14 @@ class SettingsMenu {
     }
 
     public function show() {
-        element.style.opacity = '1';
+        element.style.display = 'block';
+        //element.style.opacity = '1';
         isVisible = true;
     }
 
     public function hide() {
-        element.style.opacity = '0';
+        element.style.display = 'none';
+        //element.style.opacity = '0';
         isVisible = false;
     }
 

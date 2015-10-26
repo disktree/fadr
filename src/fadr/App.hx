@@ -38,8 +38,24 @@ class App {
         document.body.addEventListener( 'contextmenu', handleContextMenu, false );
         document.body.addEventListener( 'mousemove', handleMouseMove, false );
         timer = new Timer( MOUSE_HIDE_TIMEOUT );
+
+
+        document.getElementById( 'title' ).onclick = function(_){
+            toggleGUI();
+        };
+
+
         #end
     }
+
+
+    function toggleGUI() {
+        if( menu.toggle() )
+            footer.style.opacity = '1';
+        else
+            footer.style.opacity = '0';
+    }
+
 
     #if !mobile
 
@@ -50,11 +66,30 @@ class App {
     }
 
     function handleSettingsToggleClick(e) {
+
         e.preventDefault();
+        toggleGUI();
+
+        /*
+        if( menu.isVisible ) {
+            trace("HIDE");
+            menu.hide();
+        } else {
+            trace("SHOOW");
+            menu.show();
+        }
+        */
+
+        /*
+        e.preventDefault();
+
+        trace(menu.isVisible );
+
         if( menu.toggle() )
             footer.style.opacity = '1';
         else
             footer.style.opacity = '0';
+            */
     }
 
     function handleMouseMove(e) {

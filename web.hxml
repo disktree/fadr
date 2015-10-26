@@ -5,8 +5,8 @@
 -D platform=web
 -D web
 -D analyzer
--debug
-#--no-traces
+#-debug
+--no-traces
 
 -cp ../../lib/om/src
 --macro fadr.macro.Build.app()

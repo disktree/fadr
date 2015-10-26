@@ -8,6 +8,23 @@ class App extends fadr.App {
 
     var isFullscreen = false;
 
+    override function handleDoubleClickBody(e) {
+        toggleFullscreen();
+    }
+
+
+    override function handleContextMenu(e) {
+        super.handleContextMenu(e);
+        toggleGUI();
+        /*
+        if( menu.toggle() )
+            footer.style.opacity = '1';
+        else
+            footer.style.opacity = '0';
+            */
+    }
+
+
     function toggleFullscreen() {
         if( isFullscreen ) {
             untyped document.webkitExitFullscreen();
@@ -16,10 +33,6 @@ class App extends fadr.App {
             untyped document.body.webkitRequestFullscreen();
             isFullscreen = true;
         }
-    }
-
-    override function handleDoubleClickBody(e) {
-        toggleFullscreen();
     }
 
     static function main() {

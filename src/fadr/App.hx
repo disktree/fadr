@@ -50,10 +50,14 @@ class App {
 
 
     function toggleGUI() {
+        #if mobile
+        menu.toggle();
+        #else
         if( menu.toggle() )
             footer.style.opacity = '1';
         else
             footer.style.opacity = '0';
+        #end
     }
 
 

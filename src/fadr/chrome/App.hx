@@ -49,13 +49,9 @@ class App extends fadr.App {
         });
     }
 
-    override function handleDoubleClickBody(e) {
-        close();
-    }
-
     override function handleContextMenu(e) {
         super.handleContextMenu(e);
-        #if !debug close(); #end
+        if( menu.isVisible ) menu.hide() else close();
     }
 
     static function main() {

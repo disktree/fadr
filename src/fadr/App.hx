@@ -44,7 +44,6 @@ class App {
             toggleGUI();
         };
 
-
         #end
     }
 
@@ -100,6 +99,7 @@ class App {
 
         document.body.style.cursor = 'default';
         menuToggle.style.opacity = '1';
+        footer.style.opacity = '1';
 
         timer.stop();
         timer = new Timer( MOUSE_HIDE_TIMEOUT );

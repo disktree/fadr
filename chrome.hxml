@@ -1,6 +1,10 @@
--cmd haxe chrome-background.hxml
--cmd haxe chrome-app.hxml
+--next
+chrome-background.hxml
 
+--next
+chrome-app.hxml
+
+--next
 -cp src
 -cp ../../lib/om/src
 -D platform=chrome

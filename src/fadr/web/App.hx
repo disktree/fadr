@@ -12,7 +12,6 @@ class App extends fadr.App {
         toggleFullscreen();
     }
 
-
     override function handleContextMenu(e) {
         super.handleContextMenu(e);
         toggleGUI();

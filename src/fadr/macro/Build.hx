@@ -24,6 +24,7 @@ class Build {
             lessc( 'settings' );
             syncFile( 'res/android/dream.html', '$dst/dream.html' );
             syncFile( 'res/android/settings.html', '$dst/settings.html' );
+            syncDirectory( dst, 'data/fadr-android/assets' );
         case 'chrome':
             lessc( 'app' );
             syncFile( 'res/icon/fadr-desktop-16.png', '$dst/icon/fadr-desktop-16.png' );

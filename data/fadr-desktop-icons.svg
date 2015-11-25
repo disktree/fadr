@@ -73,7 +73,7 @@
        fx="779.27777"
        fy="808.34595"
        r="220"
-       gradientTransform="matrix(0.42537037,1.710172e-8,0,0.25136779,-412.38155,449.40038)"
+       gradientTransform="matrix(1.877761,7.5494077e-8,0,1.1096416,-1629.1269,-577.12594)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -83,9 +83,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.171726"
-     inkscape:cx="-156.90625"
-     inkscape:cy="734.76371"
+     inkscape:zoom="14.063955"
+     inkscape:cx="334.30206"
+     inkscape:cy="509.75285"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -202,7 +202,7 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#e8eaf6;fill-opacity:1;stroke:#5f5fff;stroke-opacity:0"
+       style="fill:#000000;fill-opacity:1;stroke:#5f5fff;stroke-opacity:0"
        inkscape:connector-curvature="0"
        d="m 201.66667,533.19554 c 5.04166,0 9.12083,-4.125 9.12083,-9.16667 l 0.0458,-45.83333 c 0,-5.04167 -4.125,-9.16667 -9.16666,-9.16667 l -73.33334,0 c -5.04166,0 -9.16666,4.125 -9.16666,9.16667 l 0,45.83333 c 0,5.04167 4.125,9.16667 9.16666,9.16667 l -18.33333,0 0,9.16666 110,0 0,-9.16666 -18.33333,0 z m -73.33334,-55 73.33334,0 0,45.83333 -73.33334,0 0,-45.83333 z"
        id="path3589"
@@ -220,7 +220,7 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#e8eaf6;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1"
        inkscape:connector-curvature="0"
        d="m 288.6667,542.69553 c 2.01666,0 3.64833,-1.65 3.64833,-3.66667 l 0.0183,-18.33333 c 0,-2.01667 -1.65,-3.66667 -3.66666,-3.66667 l -29.33334,0 c -2.01666,0 -3.66666,1.65 -3.66666,3.66667 l 0,18.33333 c 0,2.01667 1.65,3.66667 3.66666,3.66667 l -7.33333,0 0,3.66667 44,0 0,-3.66667 -7.33333,0 z m -29.33334,-22 29.33334,0 0,18.33333 -29.33334,0 0,-18.33333 z"
        id="path3589-3"
@@ -248,7 +248,7 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#e8eaf6;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1"
        inkscape:connector-curvature="0"
        d="m 332.66638,549.19554 c 0.64167,0 1.16083,-0.525 1.16083,-1.16667 l 0.006,-5.83333 c 0,-0.64167 -0.525,-1.16667 -1.16668,-1.16667 l -9.33332,0 c -0.64168,0 -1.16668,0.525 -1.16668,1.16667 l 0,5.83333 c 0,0.64167 0.525,1.16667 1.16668,1.16667 l -2.33334,0 0,1.16666 14,0 0,-1.16666 -2.33334,0 z m -9.33333,-7 9.33333,0 0,5.83333 -9.33333,0 0,-5.83333 z"
        id="path3589-3-6"
@@ -276,30 +276,23 @@
        inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-512.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-    <g
-       id="g4210"
-       transform="matrix(4.4144143,0,0,4.4144143,191.29607,-2560.9654)"
+    <rect
+       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-56);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4136-0-0-3"
+       width="361.09805"
+       height="266.89856"
+       x="-346.37857"
+       y="186.39912"
        inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-512.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-128.png"
-         y="622.36218"
-         x="-121.79977"
-         height="60.460697"
-         width="81.799767"
-         id="rect4136-0-0-3"
-         style="display:inline;opacity:1;fill:url(#radialGradient5954-9-56);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-128.png"
-         id="path3589-5"
-         d="m -44.045267,684.27085 c 5.04166,0 9.12083,-4.125 9.12083,-9.16667 l 0.0458,-45.83333 c 0,-5.04167 -4.125,-9.16667 -9.16666,-9.16667 l -73.333343,0 c -5.04166,0 -9.16666,4.125 -9.16666,9.16667 l 0,45.83333 c 0,5.04167 4.125,9.16667 9.16666,9.16667 l -18.33333,0 0,9.16666 110.000003,0 0,-9.16666 -18.33333,0 z m -73.333343,-55 73.333343,0 0,45.83333 -73.333343,0 0,-45.83333 z"
-         inkscape:connector-curvature="0"
-         style="display:inline;fill:#e8eaf6;fill-opacity:1;stroke:#5f5fff;stroke-opacity:0" />
-    </g>
+       inkscape:export-ydpi="90" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#5f5fff;stroke-width:4.41441441;stroke-opacity:0"
+       inkscape:connector-curvature="0"
+       d="m -3.1379865,459.68963 c 22.2559765,0 40.2631225,-18.20946 40.2631225,-40.46548 l 0.20218,-202.32731 c 0,-22.25602 -18.209459,-40.46548 -40.4654349,-40.46548 l -323.7237611,0 c -22.25597,0 -40.46543,18.20946 -40.46543,40.46548 l 0,202.32731 c 0,22.25602 18.20946,40.46548 40.46543,40.46548 l -80.93091,0 0,40.46543 485.585585,0 0,-40.46543 -80.9309139,0 z M -326.86174,216.89684 l 323.7237535,0 0,202.32731 -323.7237535,0 0,-202.32731 z"
+       id="path3589-5"
+       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-desktop-512.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

@@ -11,10 +11,11 @@ class App {
     var menu : fadr.SettingsMenu;
     var view : fadr.View;
 
-    #if !mobile
     var menuToggle : Element;
-    var footer : Element;
     var timer : Timer;
+
+    #if !mobile
+    var footer : Element;
     #end
 
     function new( settings : SettingsData ) {
@@ -22,9 +23,10 @@ class App {
         view = new fadr.View( fadr.macro.BuildColorPalettes.fromSources( 100000 ), settings );
         menu = new SettingsMenu( view, settings );
 
+        menuToggle = document.getElementById( 'settings-toggle' );
+
         #if !mobile
         footer = document.getElementsByTagName( 'footer' )[0];
-        menuToggle = document.getElementById( 'settings-toggle' );
         #end
     }
 
@@ -38,15 +40,11 @@ class App {
         document.body.addEventListener( 'contextmenu', handleContextMenu, false );
         document.body.addEventListener( 'mousemove', handleMouseMove, false );
         timer = new Timer( MOUSE_HIDE_TIMEOUT );
-
-
         document.getElementById( 'title' ).onclick = function(_){
             toggleGUI();
         };
-
         #end
     }
-
 
     function toggleGUI() {
         #if mobile
@@ -57,15 +55,6 @@ class App {
         else
             footer.style.opacity = '0';
         #end
-    }
-
-
-    #if !mobile
-
-    function handleDoubleClickBody(e) {}
-
-    function handleContextMenu(e) {
-        #if !debug e.preventDefault(); #end
     }
 
     function handleSettingsToggleClick(e) {
@@ -93,6 +82,14 @@ class App {
         else
             footer.style.opacity = '0';
             */
+    }
+
+    #if !mobile
+
+    function handleDoubleClickBody(e) {}
+
+    function handleContextMenu(e) {
+        #if !debug e.preventDefault(); #end
     }
 
     function handleMouseMove(e) {

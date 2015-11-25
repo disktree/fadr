@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="disktree.net.fadr"
     android:versionCode="1"
-    android:versionName="1.0">
+    android:versionName="1.20.0">
 
     <uses-sdk minSdkVersion="21" targetSdkVersion="21"/>
 
@@ -29,10 +29,12 @@
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden">
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
 
         <service

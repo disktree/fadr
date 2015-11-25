@@ -20,7 +20,7 @@ class App {
 
     function new( settings : SettingsData ) {
 
-        view = new fadr.View( fadr.macro.BuildColorPalettes.fromSources( 100000 ), settings );
+        view = new fadr.View( fadr.macro.BuildColorPalettes.fromSources( 100000, 15728640 ), settings );
         menu = new SettingsMenu( view, settings );
 
         menuToggle = document.getElementById( 'settings-toggle' );

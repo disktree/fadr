@@ -10,7 +10,11 @@ using haxe.io.Path;
 
 class BuildColorPalettes {
 
-    macro public static function fromSources( clampBelow : Int = 0 ) : ExprOf<Array<ColorPalette>> {
+    macro public static function fromSources( clampBelow : Int = 0, clampAbove : Int = 16777215 ) : ExprOf<Array<ColorPalette>> {
+
+        //trace(0xffffff);
+        //16777216
+        //12582912
 
         var COLORS = new Array<ColorPalette>();
         var colorExpr = ~/([0-9a-f]{6})/i;
@@ -30,6 +34,8 @@ class BuildColorPalettes {
                 }
                 var colorInt = Std.parseInt( '0x'+color.substr(1) );
                 if( colorInt < clampBelow ) {
+                    continue;
+                } else if( colorInt > clampAbove ) {
                     continue;
                 }
                 if( !palette.colors.has( color ) )

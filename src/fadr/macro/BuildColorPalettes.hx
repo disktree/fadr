@@ -41,7 +41,8 @@ class BuildColorPalettes {
                 if( !palette.colors.has( color ) )
                     palette.colors.push( color );
             }
-            COLORS.push( palette );
+            if( palette.colors.length > 0 )
+                COLORS.push( palette );
         }
 
         return macro $v{COLORS};

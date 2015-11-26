@@ -1,5 +1,5 @@
 
-![Fadr](data/fadr-title.png)
+![Fadr](fadr.png)
 
 Color fading environment beautifier.
 

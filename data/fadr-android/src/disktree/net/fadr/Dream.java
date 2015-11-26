@@ -8,6 +8,7 @@ import android.webkit.WebView;
 
 public class Dream extends DreamService {
 
+    static final boolean DEBUG = true;
     static final String TAG = "fadr";
 
     private WebView webview;
@@ -63,6 +64,8 @@ public class Dream extends DreamService {
     }
 
     private static final void log( String msg ) {
-        android.util.Log.d( TAG, msg );
+        if( DEBUG ){
+            android.util.Log.d( TAG, msg );
+        }
     }
 }

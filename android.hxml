@@ -3,6 +3,9 @@
 android-dream.hxml
 
 --next
+android-main.hxml
+
+--next
 android-settings.hxml
 
 --next

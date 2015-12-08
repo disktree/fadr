@@ -1,9 +1,9 @@
 {
     "name": "Fadr",
-    "version": "1.0.20",
+    "version": "1.0.22",
     "description": "Color fading environment beautifier",
     "manifest_version": 2,
-    "minimum_chrome_version": "45",
+    "minimum_chrome_version": "46",
     "offline_enabled": true,
     "short_name": "Fadr",
     "app": {

@@ -51,7 +51,7 @@ class App extends fadr.App {
 
     override function handleContextMenu(e) {
         super.handleContextMenu(e);
-        if( menu.isVisible ) menu.hide() else close();
+        menu.isVisible ? menu.hide() : close();
     }
 
     static function main() {

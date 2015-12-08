@@ -20,72 +20,67 @@
   <defs
      id="defs4">
     <linearGradient
-       id="linearGradient4338-0-7"
+       id="linearGradient4227"
        inkscape:collect="always">
       <stop
-         id="stop5958"
+         id="stop4229"
          offset="0"
-         style="stop-color:#df0002;stop-opacity:1" />
+         style="stop-color:#c6001d;stop-opacity:1" />
       <stop
-         id="stop5960"
+         id="stop4231"
          offset="1"
-         style="stop-color:#0008ff;stop-opacity:1" />
+         style="stop-color:#1904c9;stop-opacity:1" />
     </linearGradient>
-    <radialGradient
+    <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4338-0-7"
-       id="radialGradient5954-9-4"
-       cx="779.27777"
-       cy="808.34595"
-       fx="779.27777"
-       fy="808.34595"
-       r="220"
-       gradientTransform="matrix(0.46404041,1.8656422e-8,0,0.27421941,-530.1475,219.78467)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
+       xlink:href="#linearGradient4227"
+       id="linearGradient20210-0-7"
+       x1="-190"
+       y1="247.3622"
+       x2="-80"
+       y2="247.3622"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.7903099,0,0,1.0731,36.786103,540.16429)" />
+    <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4338-0-7"
-       id="radialGradient5954-9-4-7"
-       cx="779.27777"
-       cy="808.34595"
-       fx="779.27777"
-       fy="808.34595"
-       r="220"
-       gradientTransform="matrix(0.32141537,1.2922281e-8,0,0.18993676,-397.19175,143.56509)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
+       xlink:href="#linearGradient4227"
+       id="linearGradient20210-0-7-7"
+       x1="-190"
+       y1="247.3622"
+       x2="-80"
+       y2="247.3622"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.79859739,0,0,0.30712532,-61.50731,365.75434)" />
+    <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4338-0-7"
-       id="radialGradient5954-9-4-7-7"
-       cx="779.27777"
-       cy="808.34595"
-       fx="779.27777"
-       fy="808.34595"
-       r="220"
-       gradientTransform="matrix(0.25223985,1.0141128e-8,0,0.14905827,-331.79381,74.374902)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
+       xlink:href="#linearGradient4227"
+       id="linearGradient20210-0-7-7-3"
+       x1="-190"
+       y1="247.3622"
+       x2="-80"
+       y2="247.3622"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.54307473,0,0,0.20885618,-74.094664,246.16015)" />
+    <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4338-0-7"
-       id="radialGradient5954-9-4-7-7-4"
-       cx="779.27777"
-       cy="808.34595"
-       fx="779.27777"
-       fy="808.34595"
-       r="220"
-       gradientTransform="matrix(0.16486026,0,0,0.09742229,-252.34724,45.371069)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
+       xlink:href="#linearGradient4227"
+       id="linearGradient20210-0-7-7-3-3"
+       x1="-190"
+       y1="247.3622"
+       x2="-80"
+       y2="247.3622"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.4073654,0,0,0.15666496,-80.909774,157.27829)" />
+    <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4338-0-7"
-       id="radialGradient5954-9-4-3"
-       cx="779.27777"
-       cy="808.34595"
-       fx="779.27777"
-       fy="808.34595"
-       r="220"
-       gradientTransform="matrix(0.46404041,1.8656422e-8,0,0.27421941,-568.1475,427.78467)"
-       gradientUnits="userSpaceOnUse" />
+       xlink:href="#linearGradient4227"
+       id="linearGradient20210-0-7-7-3-3-9"
+       x1="-190"
+       y1="247.3622"
+       x2="-80"
+       y2="247.3622"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.27165607,0,0,0.10447374,-88.07843,98.087764)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -94,23 +89,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.74818262"
-     inkscape:cx="480.99109"
-     inkscape:cy="766.80946"
+     inkscape:zoom="1"
+     inkscape:cx="835.37035"
+     inkscape:cy="817.20361"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:snap-nodes="true"
-     inkscape:snap-bbox-midpoints="true"
-     inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-midpoints="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:bbox-nodes="false"
      inkscape:window-width="1920"
      inkscape:window-height="1059"
      inkscape:window-x="1680"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:bbox-paths="true"
+     inkscape:bbox-paths="false"
      showguides="true"
      inkscape:guide-bbox="true">
     <inkscape:grid
@@ -208,6 +203,17 @@
      id="layer3"
      inkscape:label="helper-icon-size-labels"
      style="display:inline">
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient20210-0-7);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4199-9-1"
+       width="306.93411"
+       height="225.35098"
+       x="-493.37265"
+       y="692.93304"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -252,50 +258,6 @@
          id="tspan4539-4-5"
          x="99.353981"
          y="81.544449">48</tspan></text>
-    <rect
-       style="opacity:1;fill:url(#radialGradient5954-9-4);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4136-0-0-7"
-       width="89.236107"
-       height="65.957123"
-       x="-213.14919"
-       y="408.47028"
-       transform="matrix(0,-1,1,0,0,0)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xxhdpi/ic_launcher.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4136-0-0-7-5"
-       width="61.808964"
-       height="45.684887"
-       x="-177.62439"
-       y="274.25726"
-       transform="matrix(0,-1,1,0,0,0)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xhdpi/ic_launcher.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-7-7);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4136-0-0-7-5-5"
-       width="48.506344"
-       height="35.852516"
-       x="-159.48209"
-       y="176.9393"
-       transform="matrix(0,-1,1,0,0,0)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-hdpi/ic_launcher.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <rect
-       style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-7-7-4);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4136-0-0-7-5-5-1"
-       width="31.703033"
-       height="23.432676"
-       x="-139.72682"
-       y="112.40565"
-       transform="matrix(0,-1,1,0,0,0)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-mdpi/ic_launcher.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:12.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -307,113 +269,173 @@
          x="552.21063"
          y="82.853058"
          id="tspan4228">512</tspan></text>
-    <g
-       id="g4265"
-       transform="matrix(3.5555556,0,0,3.5555556,-1505.1111,-396.7034)"
-       inkscape:export-filename="/home/tong/dev/project/fadr/res/icon/fadr-android-512.png"
+    <path
+       style="fill:#0b0b0b;fill-opacity:1;stroke:#0b0b0b;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 891.33338,123.69554 -170.66667,0 c -35.41333,0 -64,28.58667 -64,64.00001 l 0,341.33334 c 0,35.41333 28.58667,64 64,64 l 170.66667,0 c 35.41334,0 64.00001,-28.58667 64.00001,-64 l 0,-341.33334 c 0,-35.41334 -28.58667,-64.00001 -64.00001,-64.00001 z m -42.66666,426.66668 -85.33334,0 0,-21.33333 85.33334,0 0,21.33333 z m 69.33333,-64 -224.00001,0 0,-298.66667 224.00001,0 0,298.66667 z"
+       id="path3448-1-1-2-0-8"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xxhdpi/ic_launcher.png"
-         transform="matrix(0,-1,1,0,0,0)"
-         y="616.47028"
-         x="-251.14919"
-         height="65.957123"
-         width="89.236107"
-         id="rect4136-0-0-7-6"
-         style="display:inline;opacity:1;fill:url(#radialGradient5954-9-4-3);fill-opacity:1;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <g
-         inkscape:export-ydpi="90"
-         inkscape:export-xdpi="90"
-         inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xxhdpi/ic_launcher.png"
-         transform="matrix(6,0,0,6,578,140.3622)"
-         id="g3458-5-8-8-4-0"
-         style="fill:#000000">
-        <path
-           inkscape:connector-curvature="0"
-           d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
-           id="path3448-1-1-2-0-8" />
-        <path
-           style="fill:none"
-           inkscape:connector-curvature="0"
-           d="M 0,0 24,0 24,24 0,24 Z"
-           id="path3450-2-7-3-3-3" />
-      </g>
-    </g>
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 550.00004,102.36221 512.00006,0 0,512.00002 -512.00006,0 z"
+       id="path3450-2-7-3-3-3"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#002b36;fill-opacity:1;stroke:none"
+       id="rect3206-16-8-3-9"
+       width="1488.189"
+       height="2104.7244"
+       x="-2104.1899"
+       y="-1387.3624" />
+    <rect
+       style="fill:#dc322f;fill-opacity:1;stroke:none"
+       id="rect10764-0-0-5-0-16-9-4"
+       width="50"
+       height="1488.1899"
+       x="-1292.3622"
+       y="-1824.095"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="fill:#dc322f;fill-opacity:1;stroke:none"
+       id="rect10764-2-4-2-7-1"
+       width="20"
+       height="2105"
+       x="616"
+       y="-717.36176"
+       transform="scale(-1,-1)" />
+    <rect
+       style="fill:#dc322f;fill-opacity:1;stroke:none"
+       id="rect10764-0-3-8-0-5-8"
+       width="20.000008"
+       height="1488"
+       x="1367.6378"
+       y="-2104"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       style="fill:#dc322f;fill-opacity:1;stroke:none"
+       id="rect10764-3-4-0-8-6-5"
+       width="17.716536"
+       height="2105"
+       x="2086.4707"
+       y="-717.36176"
+       transform="scale(-1,-1)" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient20210-0-7-7);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4199-9-1-7"
+       width="87.845718"
+       height="64.496315"
+       x="-213.24077"
+       y="409.47739"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient20210-0-7-7-3);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4199-9-1-7-3"
+       width="59.738224"
+       height="43.859795"
+       x="-177.27882"
+       y="275.89337"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient20210-0-7-7-3-3);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4199-9-1-7-3-9"
+       width="44.810196"
+       height="32.899639"
+       x="-158.30917"
+       y="179.58145"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-hdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="display:inline;opacity:1;fill:url(#linearGradient20210-0-7-7-3-3-9);fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4199-9-1-7-3-9-0"
+       width="29.88217"
+       height="21.939484"
+       x="-139.69307"
+       y="112.96087"
+       transform="matrix(0,-1,1,0,0,0)"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-mdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:label="icons"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       style="fill:#000000"
-       id="g3458-5"
-       transform="matrix(2,0,0,2,100,102.2316)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-mdpi/ic_launcher.png"
+    <path
+       style="fill:#0b0b0b;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 132,104.2316 -16,0 c -3.32,0 -6,2.68 -6,6 l 0,32 c 0,3.32 2.68,6 6,6 l 16,0 c 3.32,0 6,-2.68 6,-6 l 0,-32 c 0,-3.32 -2.68,-6 -6,-6 z m -4,40 -8,0 0,-2 8,0 0,2 z m 6.5,-6 -21,0 0,-28 21,0 0,28 z"
+       id="path3448-1"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-mdpi/ic_launcher.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <path
-         id="path3448-1"
-         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path3450-2"
-         d="M 0,0 24,0 24,24 0,24 Z"
-         inkscape:connector-curvature="0"
-         style="fill:none" />
-    </g>
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 100,102.2316 48,0 0,48 -48,0 z"
+       id="path3450-2"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-mdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        style="fill:#000000"
        id="g3458-5-8"
        transform="matrix(3,0,0,3,160,102.3622)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-hdpi/ic_launcher.png"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-hdpi/ic_launcher.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
          id="path3448-1-1"
          d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
-         inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0"
+         style="fill:#0b0b0b;fill-opacity:1" />
       <path
          id="path3450-2-7"
          d="M 0,0 24,0 24,24 0,24 Z"
          inkscape:connector-curvature="0"
          style="fill:none" />
     </g>
-    <g
-       style="fill:#000000"
-       id="g3458-5-8-8"
-       transform="matrix(4,0,0,4,250,102.3622)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xhdpi/ic_launcher.png"
+    <path
+       style="fill:#0b0b0b;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 314,106.3622 -32,0 c -6.64,0 -12,5.36 -12,12 l 0,64 c 0,6.64 5.36,12 12,12 l 32,0 c 6.64,0 12,-5.36 12,-12 l 0,-64 c 0,-6.64 -5.36,-12 -12,-12 z m -8,80 -16,0 0,-4 16,0 0,4 z m 13,-12 -42,0 0,-56 42,0 0,56 z"
+       id="path3448-1-1-2"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xhdpi/ic_launcher.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <path
-         id="path3448-1-1-2"
-         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path3450-2-7-3"
-         d="M 0,0 24,0 24,24 0,24 Z"
-         inkscape:connector-curvature="0"
-         style="fill:none" />
-    </g>
-    <g
-       style="fill:#000000"
-       id="g3458-5-8-8-4"
-       transform="matrix(6,0,0,6,370,102.3622)"
-       inkscape:export-filename="/home/tong/dev/android/fadr/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 250,102.3622 96,0 0,96 -96,0 z"
+       id="path3450-2-7-3"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xhdpi/ic_launcher.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <path
-         id="path3448-1-1-2-0"
-         d="M 16,1 8,1 C 6.34,1 5,2.34 5,4 l 0,16 c 0,1.66 1.34,3 3,3 l 8,0 c 1.66,0 3,-1.34 3,-3 L 19,4 C 19,2.34 17.66,1 16,1 Z m -2,20 -4,0 0,-1 4,0 0,1 z m 3.25,-3 -10.5,0 0,-14 10.5,0 0,14 z"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path3450-2-7-3-3"
-         d="M 0,0 24,0 24,24 0,24 Z"
-         inkscape:connector-curvature="0"
-         style="fill:none" />
-    </g>
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#0b0b0b;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 466,108.3622 -48,0 c -9.96,0 -18,8.04 -18,18 l 0,96 c 0,9.96 8.04,18 18,18 l 48,0 c 9.96,0 18,-8.04 18,-18 l 0,-96 c 0,-9.96 -8.04,-18 -18,-18 z m -12,120 -24,0 0,-6 24,0 0,6 z m 19.5,-18 -63,0 0,-84 63,0 0,84 z"
+       id="path3448-1-1-2-0"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none"
+       inkscape:connector-curvature="0"
+       d="m 370,102.3622 144,0 0,144 -144,0 z"
+       id="path3450-2-7-3-3"
+       inkscape:export-filename="/home/tong/dev/project/fadr/data/fadr-android/res/mipmap-xxhdpi/ic_launcher.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

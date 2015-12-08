@@ -1,9 +1,9 @@
 -js build/android/dream.js
 -main fadr.android.Dream
 -cp src
--cp ../../../../lib/om/src
 -dce full
--D android
+#-debug
+--no-traces
 -D mobile
+-D android
 -D analyzer
--debug

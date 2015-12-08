@@ -1,5 +1,5 @@
--js build/android/settings.js
--main fadr.android.Settings
+-js build/android/main.js
+-main fadr.android.Main
 -cp src
 -dce full
 #-debug

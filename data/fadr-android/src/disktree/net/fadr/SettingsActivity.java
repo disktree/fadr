@@ -14,7 +14,13 @@ import android.webkit.WebView;
 
 public class SettingsActivity extends Activity {
 
-    private WebView webview;
+    protected WebView webview;
+    protected int systemUiFlags;
+
+    protected SettingsActivity( int systemUiFlags ) {
+        super();
+        this.systemUiFlags = systemUiFlags;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,17 +29,13 @@ public class SettingsActivity extends Activity {
 
         this.requestWindowFeature( Window.FEATURE_NO_TITLE );
 
-        getWindow().getDecorView().setSystemUiVisibility(
-            View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY |
-            View.SYSTEM_UI_FLAG_FULLSCREEN );
-
         setContentView( R.layout.activity_settings );
 
         webview = (WebView) findViewById(R.id.webview);
-        //webview.setBackgroundColor(0x00000000);
-        //webview.setLayerType(View.LAYER_TYPE_HARDWARE,null);
+        webview.setBackgroundColor(0x00000000);
         webview.clearCache(true);
         webview.setInitialScale(0);
+        //webview.setLayerType(View.LAYER_TYPE_HARDWARE,null);
         //webview.setVerticalScrollBarEnabled(false);
 
         WebSettings settings = webview.getSettings();
@@ -45,9 +47,24 @@ public class SettingsActivity extends Activity {
         settings.setUseWideViewPort( true );
         settings.setLayoutAlgorithm(LayoutAlgorithm.NORMAL);
 
-        webview.loadUrl( "file:///android_asset/settings.html" );
+        //webview.addJavascriptInterface( new WebApp(this), "AndroidApp" );
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        getWindow().getDecorView().setSystemUiVisibility( systemUiFlags );
+    }
+
+    protected void loadWebApp(String id) {
+        webview.loadUrl( "file:///android_asset/"+id+".html" );
+    }
+
+    protected void setupUi(int i) {
+        getWindow().getDecorView().setSystemUiVisibility(i);
+    }
+
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate( R.menu.meta, menu );
@@ -67,8 +84,9 @@ public class SettingsActivity extends Activity {
                 return super.onOptionsItemSelected(item);
         }
     }
+    */
 
-    private void openURI( String uri ) {
+    protected void openURI( String uri ) {
         Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( uri ) );
         startActivity( intent );
     }

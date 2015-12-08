@@ -15,6 +15,21 @@
 @import "../style/base.less";
 @import "../style/settings.less";
 
+
+input[type=range] {
+   cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+    transition: transform 0.1s;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.3,1.3);
+}
+
+.slider {
+    margin-bottom: 16px;
+}
+
 #settings-toggle {
     position: fixed;
     top: 16px;
@@ -27,6 +42,7 @@
 }
 
 #settings {
+    position: fixed;
     top: 70px;
     left: 90px;
     display: none;
@@ -44,20 +60,6 @@
     float: left;
     width: 200px;
     margin-right: 20px;
-}
-
-input[type=range] {
-   cursor: pointer;
-}
-input[type=range]::-webkit-slider-thumb {
-    transition: transform 0.1s;
-}
-input[type=range]::-webkit-slider-thumb:hover {
-    transform: scale(1.3,1.3);
-}
-
-.slider {
-    margin-bottom: 16px;
 }
 
 @import "../style/footer";

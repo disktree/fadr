@@ -1,9 +1,11 @@
 -js build/android/main.js
 -main fadr.android.Main
 -cp src
+-lib closure
 -dce full
 #-debug
 --no-traces
 -D android
 -D mobile
 -D analyzer
+-D closure_overwrite

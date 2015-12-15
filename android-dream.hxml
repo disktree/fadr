@@ -1,9 +1,11 @@
 -js build/android/dream.js
 -main fadr.android.Dream
 -cp src
+-lib closure
 -dce full
 #-debug
 --no-traces
 -D mobile
 -D android
 -D analyzer
+-D closure_overwrite

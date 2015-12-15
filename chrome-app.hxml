@@ -2,7 +2,9 @@
 -main fadr.chrome.App
 -cp src
 -lib chrome-app
+-lib closure
 -dce full
 -D analyzer
+-D closure_overwrite
 #-debug
 --no-traces

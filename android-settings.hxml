@@ -1,9 +1,11 @@
 -js build/android/settings.js
 -main fadr.android.Settings
 -cp src
+-lib closure
 -dce full
 #-debug
 --no-traces
 -D android
 -D mobile
 -D analyzer
+-D closure_overwrite

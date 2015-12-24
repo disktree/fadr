@@ -2,6 +2,7 @@ package disktree.net.fadr;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 public class MainActivity extends SettingsActivity {
 
@@ -20,6 +21,7 @@ public class MainActivity extends SettingsActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
+        this.getWindow().addFlags( WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON );
         loadWebApp( "main" );
     }
 }

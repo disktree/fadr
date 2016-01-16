@@ -10,6 +10,6 @@ android-settings.hxml
 
 --next
 -cp src
--cp ../../lib/om.sys/src
+-cp ../../lib/om.io/src
 -D platform=android
 --macro fadr.macro.Build.app()

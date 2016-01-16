@@ -6,6 +6,6 @@ chrome-app.hxml
 
 --next
 -cp src
--cp ../../lib/om.sys/src
+-cp ../../lib/om.io/src
 -D platform=chrome
 --macro fadr.macro.Build.app()

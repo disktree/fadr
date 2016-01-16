@@ -11,7 +11,6 @@
 @slider-track-height : 10px;
 @slider-thumb-size : 14px;
 
-@import "../style/mixins.less";
 @import "../style/base.less";
 @import "../style/settings.less";
 
@@ -25,6 +24,28 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]::-webkit-slider-thumb:hover {
     transform: scale(1.3,1.3);
 }
+
+
+div.select {
+    margin-bottom: 10px;
+}
+div.select span:first-child {
+    margin-right: 5px;
+}
+div.select span.option {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+div.select span.option.selected {
+    text-decoration: none;
+}
+div.select span.option:not(:nth-child(2)):before {
+    content: "/";
+}
+div.select span:last-child {
+    margin-left: 5px;
+}
+
 
 .slider {
     margin-bottom: 16px;

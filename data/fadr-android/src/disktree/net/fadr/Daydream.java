@@ -1,12 +1,14 @@
 package disktree.net.fadr;
 
+import android.content.Intent;
+import android.provider.Settings;
 import android.service.dreams.DreamService;
 import android.view.View;
 import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class Dream extends DreamService {
+public class Daydream extends DreamService {
 
     static final boolean DEBUG = true;
     static final String TAG = "fadr";
@@ -40,8 +42,18 @@ public class Dream extends DreamService {
         getWindow().getDecorView().setSystemUiVisibility( View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION );
 
         //WindowManager.LayoutParams layout = getWindow().getAttributes();
-        //layout.screenBrightness = 0.1;
+        //layout.screenBrightness = 0.1f;
         //getWindow().setAttributes( layout );
+
+        /*
+        Settings.System.putInt(this.getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 20);
+
+        WindowManager.LayoutParams lp = getWindow().getAttributes();
+        lp.screenBrightness =0.2f;// 100 / 100.0f;
+        getWindow().setAttributes(lp);
+
+        startActivity(new Intent(this,RefreshScreen.class));
+        */
 
         webview = (WebView) findViewById(R.id.webview);
         webview.setBackgroundColor(0x00000000);

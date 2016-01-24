@@ -8,3 +8,4 @@ data/fadr-android/gen/
 data/fadr-android/*.keystore
 data/fadr-android/local.properties
 data/fadr-android/NOTES.md
+data/fadr-android/release.sh

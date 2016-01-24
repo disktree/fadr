@@ -1,6 +1,8 @@
 package disktree.net.fadr;
 
 import android.os.Bundle;
+//import android.view.Menu;
+//import android.view.MenuInflater;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -24,4 +26,14 @@ public class MainActivity extends SettingsActivity {
         this.getWindow().addFlags( WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON );
         loadWebApp( "main" );
     }
+
+    /*
+    @Override
+    public boolean onCreateOptionsMenu( Menu menu ) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate( R.menu.menu_main, menu );
+        return true;
+    }
+    */
+
 }

@@ -267,9 +267,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36215225"
-     inkscape:cx="1083.9196"
-     inkscape:cy="787.11895"
+     inkscape:zoom="0.29609286"
+     inkscape:cx="749.8158"
+     inkscape:cy="636.88921"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -287,7 +287,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -295,50 +295,6 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'DS Clone3D';-inkscape-font-specification:'DS Clone3D, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="text4842"
-       transform="translate(0,570.00001)">
-      <path
-         d="m 140.04,429.36219 -11.72,11.72 -11.28,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,5.76 -5.48,5.48 5.48,0 0,5.8 z"
-         id="path4878"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 172.8525,440.60219 -11.72,11.72 -5.8,0 0,-11.24 -5.48,0 -11.24,11.24 -5.8,0 0,-28.28 11.72,-11.72 28.32,0 0,28.28 z"
-         id="path4880"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 205.665,435.00219 -17.36,17.32 -22.68,0 0,-28.28 11.72,-11.72 22.68,0 0,5.64 5.64,0 0,17.04 z m -17.56,-0.16 0,-5.04 -4.96,0 0,5.04 4.96,0 z"
-         id="path4882"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 238.4775,429.36219 -5.64,5.64 0,5.64 -11.72,11.72 -5.76,0 0,-11.12 -11.12,11.12 -5.8,0 0,-28.32 11.72,-11.72 28.32,0 0,17.04 z"
-         id="path4884"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
-       id="g4931">
-      <path
-         d="m 117.52271,1010.4435 -5.64,0 0,-28.11999 28.16,0 0,5.64 -22.52,0 0,5.6 22.52,0 0,5.64 -22.52,0 0,11.23999 z"
-         id="path4865"
-         inkscape:connector-curvature="0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         d="m 172.85521,1010.4435 -5.64,0 0,-11.23999 -16.88,0 0,11.23999 -5.64,0 0,-28.11999 28.16,0 0,28.11999 z m -5.64,-16.87999 0,-5.6 -16.88,0 0,5.6 16.88,0 z"
-         id="path4867"
-         inkscape:connector-curvature="0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         d="m 205.66771,1004.8435 -5.64,0 0,5.6 -22.52,0 0,-28.11999 22.52,0 0,5.64 5.64,0 0,16.87999 z m -5.72,0 0,-16.87999 -16.8,0 0,16.87999 16.8,0 z"
-         id="path4869"
-         inkscape:connector-curvature="0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         d="m 232.84021,1010.4835 -5.64,0 0,-11.27999 -11.24,0 0,11.27999 -5.64,0 0,-28.15999 28.16,0 0,16.88 -5.64,0 0,11.27999 z m 0,-16.87999 0,-5.64 -16.88,0 0,5.64 16.88,0 z"
-         id="path4871"
-         inkscape:connector-curvature="0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'DS Clone';-inkscape-font-specification:'DS Clone, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </g>
     <g
        id="g6859"
        inkscape:export-xdpi="90"

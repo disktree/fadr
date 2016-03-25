@@ -1,4 +1,4 @@
--js build/android/main.js
+-js ../fadr-android/assets/main.js
 -main fadr.android.Main
 -cp src
 -lib closure

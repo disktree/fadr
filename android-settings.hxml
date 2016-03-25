@@ -1,4 +1,4 @@
--js build/android/settings.js
+-js ../fadr-android/assets/settings.js
 -main fadr.android.Settings
 -cp src
 -lib closure
